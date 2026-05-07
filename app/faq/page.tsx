@@ -1,8 +1,20 @@
 "use client";
+import type { Metadata } from 'next';
 import React from 'react';
 
 import Link from 'next/link';
 import { Sparkles, ArrowRight } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: 'FAQ | Silvoraa',
+  description: 'Gemstone healing properties, birthstone guide, and jewelry care FAQ. Everything you need to know about Silvoraa jewelry.',
+  alternates: { canonical: 'https://www.silvoraa.com/faq' },
+  openGraph: {
+    title: 'FAQ | Silvoraa',
+    description: 'Gemstone healing properties and jewelry care.',
+    url: 'https://www.silvoraa.com/faq',
+  },
+};
 
 const faqSchema = JSON.stringify({
   "@context": "https://schema.org",

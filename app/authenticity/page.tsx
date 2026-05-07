@@ -1,8 +1,20 @@
 "use client";
+import type { Metadata } from 'next';
 import React from 'react';
 
 import { motion } from 'framer-motion';
 import { ShieldCheck, Gem, Sparkles, Award } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: 'Authenticity Guarantee | Silvoraa',
+  description: 'Every Silvoraa piece comes with authenticity certification. GIA certified gemstones, 925 sterling silver, and lifetime warranty.',
+  alternates: { canonical: 'https://www.silvoraa.com/authenticity' },
+  openGraph: {
+    title: 'Authenticity Guarantee | Silvoraa',
+    description: 'GIA certified gemstones with lifetime warranty.',
+    url: 'https://www.silvoraa.com/authenticity',
+  },
+};
 
 const faqSchema = JSON.stringify({
   "@context": "https://schema.org",

@@ -17,7 +17,6 @@ export const metadata: import('next').Metadata = {
   },
   description: 'Premium 925 sterling silver gemstone jewelry — Amethyst, Topaz, Citrine, Garnet, and more. Handcrafted with authentic natural stones.',
   metadataBase: new URL('https://www.silvoraa.com'),
-  alternates: { canonical: '/' },
   icons: { icon: '/favicon.svg', shortcut: '/favicon.svg' },
   openGraph: {
     siteName: 'Silvoraa',

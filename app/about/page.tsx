@@ -1,9 +1,21 @@
 "use client";
+import type { Metadata } from 'next';
 import React from 'react';
 
 import { motion } from 'framer-motion';
 import { Heart, Shield, Leaf, Sparkles } from 'lucide-react';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'Our Story | Silvoraa',
+  description: 'Discover Silvoraa\'s story — handcrafted gemstone jewelry made with intention. Learn about our artisans, quality standards, and commitment to ethical luxury.',
+  alternates: { canonical: 'https://www.silvoraa.com/about' },
+  openGraph: {
+    title: 'Our Story | Silvoraa',
+    description: 'Discover Silvoraa\'s story — handcrafted gemstone jewelry made with intention.',
+    url: 'https://www.silvoraa.com/about',
+  },
+};
 
 const fadeInUp = {
     hidden: { opacity: 0, y: 20 },

@@ -35,6 +35,28 @@ const jewelryStoreSchema = {
   paymentAccepted: 'Credit Card, Debit Card, UPI',
 };
 
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Silvoraa',
+  url: 'https://www.silvoraa.com',
+  logo: 'https://www.silvoraa.com/favicon.svg',
+  description: 'Handcrafted gemstone jewelry brand based in Jaipur, India. Creating intention-based jewelry with 925 sterling silver and authentic earth-mined gemstones.',
+  sameAs: [
+    'https://www.instagram.com/silvoraa',
+    'https://www.facebook.com/silvoraa',
+    'https://www.youtube.com/@silvoraa'
+  ],
+  contactPoint: {
+    '@type': 'ContactPoint',
+    telephone: '+91-9876543210',
+    contactType: 'customer service',
+    availableLanguage: 'English'
+  },
+  areaServed: 'Worldwide',
+  serviceType: 'Online jewelry retail'
+};
+
 const websiteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
@@ -51,6 +73,7 @@ export default function HomePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jewelryStoreSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
       <HomePageClient />
     </>

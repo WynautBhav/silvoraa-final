@@ -1,10 +1,22 @@
 "use client";
+import type { Metadata } from 'next';
 import React, { useMemo } from 'react';
 import Link from 'next/link';
 
 import { PRODUCTS, STONES } from '@/constants';
 import { StoneType } from '@/types';
 import { ChevronRight, ArrowRight, Gem, Sparkles } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: 'Gemstone Collections | Silvoraa',
+  description: 'Explore our curated gemstone collections — Amethyst for calm, Citrine for abundance, Blue Topaz for clarity. Handcrafted 925 sterling silver jewelry for every intention.',
+  alternates: { canonical: 'https://www.silvoraa.com/collections' },
+  openGraph: {
+    title: 'Gemstone Collections | Silvoraa',
+    description: 'Explore our curated gemstone collections.',
+    url: 'https://www.silvoraa.com/collections',
+  },
+};
 
 const CollectionsPage : React.FC = () => {
     // Group products by stone type and get counts

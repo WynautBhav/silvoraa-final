@@ -1,4 +1,5 @@
 "use client";
+import type { Metadata } from 'next';
 import React, { useState, useMemo, useEffect } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
@@ -8,6 +9,17 @@ import { STONES } from '@/constants';
 import { Product, ProductType, StoneType } from '@/types';
 import { useProducts } from '@/hooks/useProducts';
 import { ChevronRight, X, SlidersHorizontal, Grid3X3, LayoutGrid, Grid2X2, ChevronDown, Sparkles, Filter, Check, Loader2 } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: 'Shop All | Silvoraa',
+  description: 'Browse our complete collection of 925 sterling silver gemstone jewelry. Discover handcrafted rings, earrings, pendants, and bracelets with Amethyst, Citrine, Topaz, and more.',
+  alternates: { canonical: 'https://www.silvoraa.com/shop' },
+  openGraph: {
+    title: 'Shop All | Silvoraa',
+    description: 'Browse our complete collection of handcrafted gemstone jewelry.',
+    url: 'https://www.silvoraa.com/shop',
+  },
+};
 
 
 
