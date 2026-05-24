@@ -9,9 +9,30 @@ export const metadata: Metadata = {
     title: 'Gemstone Collections | Silvoraa',
     description: 'Explore our curated gemstone collections.',
     url: 'https://www.silvoraa.com/collections',
+    images: [{ url: 'https://www.silvoraa.com/images/og-home.jpg', width: 1200, height: 630, alt: 'Gemstone Collections | Silvoraa' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Gemstone Collections | Silvoraa',
+    description: 'Explore our curated gemstone collections.',
+    images: ['https://www.silvoraa.com/images/og-home.jpg'],
   },
 };
 
+const breadcrumbSchema = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.silvoraa.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Collections', item: 'https://www.silvoraa.com/collections' },
+  ],
+});
+
 export default function CollectionsPage() {
-  return <CollectionsPageClient />;
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbSchema }} />
+      <CollectionsPageClient />
+    </>
+  );
 }

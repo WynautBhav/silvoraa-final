@@ -217,6 +217,7 @@ const faqCategories = [
 const FAQPage : React.FC = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqSchema }} />
       
 
       <div className="relative bg-silvoraa-black text-white overflow-hidden">
