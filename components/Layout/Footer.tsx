@@ -117,16 +117,6 @@ export function Footer() {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/about#sustainability" className="hover:text-silvoraa-gold transition-colors">
-                                    Sustainability
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/collections" className="hover:text-silvoraa-gold transition-colors">
-                                    Gemstone Guide
-                                </Link>
-                            </li>
-                            <li>
                                 <Link href="/contact" className="hover:text-silvoraa-gold transition-colors">
                                     Contact Us
                                 </Link>
