@@ -21,12 +21,12 @@ export const initPostHog = () => {
 };
 
 export const capturePageView = (path: string, title: string) => {
-  if (!POSTHOG_API_KEY) return;
+  if (!POSTHOG_API_KEY || !posthog) return;
   posthog.capture('$pageview', { $page_path: path, $page_title: title });
 };
 
 export const identifyUser = (userId: string, email?: string, name?: string) => {
-  if (!POSTHOG_API_KEY) return;
+  if (!POSTHOG_API_KEY || !posthog) return;
   posthog.identify(userId, { email, name });
 };
 
@@ -36,7 +36,7 @@ export const captureProductViewed = (
   price: number,
   category?: string
 ) => {
-  if (!POSTHOG_API_KEY) return;
+  if (!POSTHOG_API_KEY || !posthog) return;
   posthog.capture('product_viewed', {
     product_id: productId,
     product_name: productName,
@@ -53,7 +53,7 @@ export const captureCartUpdated = (
   quantity: number,
   cartTotal: number
 ) => {
-  if (!POSTHOG_API_KEY) return;
+  if (!POSTHOG_API_KEY || !posthog) return;
   posthog.capture('cart_updated', {
     action,
     product_id: productId,
@@ -69,7 +69,7 @@ export const captureCheckoutStarted = (
   itemCount: number,
   products: Array<{ id: string; name: string; price: number; quantity: number }>
 ) => {
-  if (!POSTHOG_API_KEY) return;
+  if (!POSTHOG_API_KEY || !posthog) return;
   posthog.capture('checkout_started', {
     cart_total: cartTotal,
     item_count: itemCount,
@@ -82,7 +82,7 @@ export const captureOrderCompleted = (
   cartTotal: number,
   products: Array<{ id: string; name: string; price: number; quantity: number }>
 ) => {
-  if (!POSTHOG_API_KEY) return;
+  if (!POSTHOG_API_KEY || !posthog) return;
   posthog.capture('order_completed', {
     order_id: orderId,
     cart_total: cartTotal,

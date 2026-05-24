@@ -48,14 +48,21 @@ const handleError = async () => {
     }
   };
 
+  const isVisible = status === 'loaded' || status === 'generating';
+
   return (
     <div className={`relative overflow-hidden bg-silvoraa-softWhite ${className}`}>
+      {/* Shimmer placeholder while loading */}
+      {status === 'loading' && (
+        <div className="absolute inset-0 bg-gradient-to-r from-silvoraa-softWhite via-gray-100 to-silvoraa-softWhite animate-shimmer bg-[length:200%_100%]" />
+      )}
+
       {/* Image Element */}
       {src && status !== 'error' && (
         <img
           src={src}
           alt={alt}
-          className="w-full h-full object-cover"
+          className={`w-full h-full object-cover transition-opacity duration-500 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
           onLoad={() => setStatus('loaded')}
           onError={handleError}
           loading="lazy"

@@ -401,10 +401,10 @@ export function Navbar({ onOpenStylist }: NavbarProps) {
             </Link>
           )}
         </div>
-      </nav >
+      </nav>
 
       {/* Mobile Menu Overlay - Premium Design */}
-      < div className={`fixed inset-0 bg-white z-40 lg:hidden transition-all duration-500 ${isMobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`
+      <div className={`fixed inset-0 bg-white z-40 lg:hidden transition-all duration-500 ${isMobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`
       }>
         <div className={`flex flex-col h-full pt-24 pb-8 px-8 transition-transform duration-500 ${isMobileMenuOpen ? 'translate-y-0' : '-translate-y-8'}`}>
 
@@ -561,9 +561,9 @@ export function Navbar({ onOpenStylist }: NavbarProps) {
             )}
           </div>
         </div>
-      </div >
+      </div>
       {/* Smart Search Overlay */}
-      < SmartSearch isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
+      <SmartSearch isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
     </>
   );
 };

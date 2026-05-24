@@ -1,6 +1,7 @@
+'use client';
 import React from 'react';
-
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+ 
+ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'secondary' | 'tertiary' | 'icon' | 'white';
   isLoading?: boolean;
 }

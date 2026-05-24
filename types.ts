@@ -19,7 +19,7 @@ export enum StoneType {
   MOONSTONE = 'Moonstone',
   RUBY = 'Ruby',
   SAPPHIRE = 'Sapphire',
-  TANZANITE = 'Tanzania',
+  TANZANITE = 'Tanzanite',
   AQUAMARINE = 'Aquamarine',
   TURQUOISE = 'Turquoise',
   PEARL = 'Pearl',

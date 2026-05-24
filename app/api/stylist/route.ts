@@ -21,7 +21,7 @@ export async function POST(request: Request) {
     const aspectRatio = type === 'product' ? '1:1' : '16:9';
 
     const response = await ai.models.generateContent({
-      model: 'gemini-2.5-flash-image',
+      model: 'gemini-2.0-flash-exp-image-generation',
       contents: prompt,
       config: {
         imageConfig: { aspectRatio }

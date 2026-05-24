@@ -82,6 +82,7 @@ export const APPWRITE_CONFIG = {
     usersCollectionId: process.env.NEXT_PUBLIC_APPWRITE_USERS_COLLECTION_ID || 'profiles',
     reviewsCollectionId: process.env.NEXT_PUBLIC_APPWRITE_REVIEWS_COLLECTION_ID || 'reviews',
     bucketId: process.env.NEXT_PUBLIC_APPWRITE_BUCKET_ID || 'images',
+    wishlistCollectionId: process.env.NEXT_PUBLIC_APPWRITE_WISHLIST_COLLECTION_ID || 'wishlist',
 };
 
 // Auth Helpers

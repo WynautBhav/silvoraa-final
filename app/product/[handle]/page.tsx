@@ -3,27 +3,65 @@ import React, { useMemo, useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
 
-import { STONES } from '@/constants';
-import { Product, StoneType } from '@/types';
-import { useProduct, useProducts } from '@/hooks/useProducts';
-import { ProductCard } from '@/components/Product/ProductCard';
-import { useCart } from '@/components/Cart/CartContext';
-import { ProductDescriptionMain, ProductDescriptionExtras } from '@/components/Product/ProductDescription';
-import { SilvoraaStylist } from '@/components/Product/SilvoraaStylist';
-import { ProductSidebarExtras } from '@/components/Product/ProductSidebarExtras';
-import { ProductPromiseBanner } from '@/components/Product/ProductPromiseBanner';
-import { ImageUpscaler } from '@/components/UI/ImageUpscaler';
-import { ChevronRight, ArrowLeft, Minus, Plus, ShoppingBag, Heart, Share2, Check, Sparkles, Gem, Loader2 } from 'lucide-react';
+interface Props {
+  params: Promise<{ handle: string }>;
+}
 
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { handle } = await params;
+  const product = PRODUCTS.find(p => p.handle === handle);
 
+  if (!product) {
+    return { title: 'Product Not Found' };
+  }
 
-import { useRouter } from 'next/navigation';
+  const cleanDescription = product.description
+    ? product.description
+        .replace(/<[^>]*>/g, '')
+        .replace(/^(Description|Product Features|Benefits):\s*/i, '')
+        .trim()
+        .substring(0, 155)
+        .trim()
+    : `Shop ${product.title} — a handcrafted ${product.type.toLowerCase()} featuring ${product.stone}. Premium 925 sterling silver.`;
 
-const ProductPage : React.FC = () => {
-    const router = useRouter();
+  return {
+    title: product.seoTitle || product.title,
+    description: product.seoDescription || cleanDescription,
+    alternates: { canonical: `https://www.silvoraa.com/product/${handle}` },
+    openGraph: {
+      title: product.seoTitle || `${product.title}`,
+      description: product.seoDescription || cleanDescription,
+      url: `https://www.silvoraa.com/product/${handle}`,
+      images: product.image ? [{ url: `https://www.silvoraa.com${product.image}`, width: 1200, height: 630, alt: product.title }] : [],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: product.seoTitle || `${product.title}`,
+      description: product.seoDescription || cleanDescription,
+      images: product.image ? [`https://www.silvoraa.com${product.image}`] : [],
+    },
+  };
+}
 
-    const onProductClick = (product: Product) => router.push(`/product/${product.handle}`);
-    const { handle } = useParams<{ handle: string }>();
+function productSchema(product: typeof PRODUCTS[0]) {
+  const schema: Record<string, unknown> = {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: product.title,
+    description: product.description?.replace(/<[^>]*>/g, '').replace(/^(Description|Product Features|Benefits):\s*/i, '').trim().substring(0, 300).trim() || `${product.title} by Silvoraa`,
+    image: product.images?.length ? product.images.map((i: string) => `https://www.silvoraa.com${i}`) : [`https://www.silvoraa.com${product.image}`],
+    brand: { '@type': 'Brand', name: 'Silvoraa' },
+    offers: {
+      '@type': 'AggregateOffer',
+      priceCurrency: 'INR',
+      lowPrice: product.variants.length > 0 ? Math.min(...product.variants.map(v => v.price)) : product.price,
+      highPrice: product.variants.length > 0 ? Math.max(...product.variants.map(v => v.price)) : product.price,
+      availability: 'https://schema.org/InStock',
+      url: `https://www.silvoraa.com/product/${product.handle}`,
+    },
+  };
+  return JSON.stringify(schema);
+}
 
     const { addToCart } = useCart();
 
@@ -38,14 +76,13 @@ const ProductPage : React.FC = () => {
     const [isZoomOpen, setIsZoomOpen] = useState(false);
     const [isWishlisted, setIsWishlisted] = useState(false);
 
-    // Fetch product data
-    const { product, isLoading: isProductLoading, error: productError } = useProduct(handle || '');
-    // Fetch all products for 'Related Products'
-    const { products: allProducts } = useProducts();
+export default async function ProductPage({ params }: Props) {
+  const { handle } = await params;
+  const product = PRODUCTS.find(p => p.handle === handle);
 
-    // Related products (Priority: Manual > Stone > Type > Any)
-    const relatedProducts = useMemo(() => {
-        if (!product || !allProducts.length) return [];
+  if (!product) {
+    return <ProductPageClient />;
+  }
 
         // 1. Manual Selection (Pairs With) - use handle not id
         if (product.related_product_ids && product.related_product_ids.length > 0) {

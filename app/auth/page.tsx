@@ -48,11 +48,11 @@ const AuthPage : React.FC = () => {
                 const result = await signup(formData.email, formData.password, formData.name);
                 if (result.error) {
                     // Check if it's an email confirmation message
-                    if (result.error.includes('check your email')) {
+                    if (result.error && result.error.includes('check your email')) {
                         setSuccessMessage(result.error);
                         setError(null);
                     } else {
-                        setError(result.error);
+                        setError(result.error || 'An error occurred');
                     }
                 } else {
                     onLoginSuccess();

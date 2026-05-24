@@ -100,9 +100,9 @@ export default function DashboardPage() {
 
             setStats({
                 totalSales,
-                activeOrders: activeOrders || 0,
-                totalProducts: totalProducts || 0,
-                totalCustomers: totalCustomers || 0
+                activeOrders: activeOrders?.length || 0,
+                totalProducts: totalProducts?.length || 0,
+                totalCustomers: totalCustomers?.length || 0
             });
             setRecentOrders(recent || []);
             setSalesData(dailySales);

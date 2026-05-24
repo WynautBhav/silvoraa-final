@@ -11,6 +11,7 @@ export function HeroSection() {
     const [isPaused, setIsPaused] = useState(false);
     const [key, setKey] = useState(0);
     const [viewMode, setViewMode] = useState<'desktop' | 'mobile'>('desktop');
+    const [imagesLoaded, setImagesLoaded] = useState<Record<string, boolean>>({});
     const DURATION = 5000;
 
     useEffect(() => {
@@ -69,10 +70,15 @@ export function HeroSection() {
                             className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 min-w-full min-h-full"
                             style={{ aspectRatio: viewMode === 'mobile' ? '1536/2752' : '1920/1000' }}
                         >
+                            {/* Shimmer overlay while image loads */}
+                            {!imagesLoaded[slide.id] && (
+                                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-shimmer bg-[length:200%_100%] z-10" />
+                            )}
                             <img
                                 src={viewMode === 'mobile' ? (slide.mobileSrc || slide.src) : slide.src}
                                 alt={overlay.heading || "Hero Banner"}
                                 className="absolute inset-0 w-full h-full object-cover"
+                                onLoad={() => setImagesLoaded(prev => ({ ...prev, [slide.id]: true }))}
                             />
 
                             {/* Button Layer - Exactly matching 1920x1000 pixels coordinates */}

@@ -68,20 +68,16 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
     const loadUserProfile = async (awUser: any) => {
         try {
-            const timeoutPromise = new Promise((_, reject) =>
-                setTimeout(() => reject(new Error('Profile load timeout')), 8000)
-            );
-
             const profilePromise = profileService.getProfile(awUser.$id);
             const wishlistPromise = profileService.getWishlist(awUser.$id);
 
-            const results = await Promise.race([
-                Promise.allSettled([profilePromise, wishlistPromise]),
-                timeoutPromise
-            ]) as [PromiseSettledResult<any>, PromiseSettledResult<any>];
+            const timeout = (p: Promise<any>, ms: number) =>
+                Promise.race([p, new Promise<any>((_, reject) => setTimeout(() => reject(new Error('Timeout')), ms))]);
 
-            const profileResult = results[0];
-            const wishlistResult = results[1];
+            const [profileResult, wishlistResult] = await Promise.allSettled([
+                timeout(profilePromise, 8000),
+                timeout(wishlistPromise, 8000),
+            ]);
 
             const profile = profileResult.status === 'fulfilled' ? profileResult.value : null;
             const wishlist = wishlistResult.status === 'fulfilled' ? wishlistResult.value : [];

@@ -53,7 +53,7 @@ const CouponInput = () => {
 };
 
 export const CartDrawer: React.FC = () => {
-  const { items, isOpen, toggleCart, removeFromCart, updateQuantity, cartTotal } = useCart();
+  const { items, isOpen, toggleCart, removeFromCart, updateQuantity, cartTotal, subtotal, appliedCoupon, discountAmount, removeCoupon } = useCart();
 
   if (!isOpen) return null;
 
@@ -129,16 +129,16 @@ export const CartDrawer: React.FC = () => {
             {/* Discount Code Input */}
             <div className="flex justify-between mb-2 text-lg font-serif">
               <span>Subtotal</span>
-              <span>₹{useCart().subtotal.toFixed(2)}</span>
+              <span>₹{subtotal.toFixed(2)}</span>
             </div>
 
-            {useCart().appliedCoupon ? (
+            {appliedCoupon ? (
               <div className="flex items-center justify-between text-sm text-green-600 mb-4 bg-green-50 p-2 rounded-lg">
                 <div className="flex items-center gap-2">
                   <TicketPercent size={14} />
-                  <span>Code <b>{useCart().appliedCoupon?.code}</b> applied</span>
+                  <span>Code <b>{appliedCoupon.code}</b> applied</span>
                 </div>
-                <button onClick={useCart().removeCoupon} className="text-xs hover:underline">Remove</button>
+                <button onClick={removeCoupon} className="text-xs hover:underline">Remove</button>
               </div>
             ) : (
               <div className="mb-4">
@@ -146,16 +146,16 @@ export const CartDrawer: React.FC = () => {
               </div>
             )}
 
-            {useCart().discountAmount > 0 && (
+            {discountAmount > 0 && (
               <div className="flex justify-between mb-2 text-sm text-green-600">
                 <span>Discount</span>
-                <span>-₹{useCart().discountAmount.toFixed(2)}</span>
+                <span>-₹{discountAmount.toFixed(2)}</span>
               </div>
             )}
 
             <div className="flex justify-between mb-4 text-lg font-serif font-bold text-gray-900 border-t border-gray-200 pt-2">
               <span>Total</span>
-              <span>₹{useCart().cartTotal.toFixed(2)}</span>
+              <span>₹{cartTotal.toFixed(2)}</span>
             </div>
             <p className="text-xs text-silvoraa-warmGray mb-6 text-center">Shipping & taxes calculated at checkout.</p>
             <Button className="w-full">Checkout</Button>

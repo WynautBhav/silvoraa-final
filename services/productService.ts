@@ -41,7 +41,7 @@ export const getProductByHandle = async (handle: string): Promise<Product | null
             APPWRITE_CONFIG.productsCollectionId,
             [Query.equal("handle", handle)]
         );
-        return response.documents[0] as unknown as Product || null;
+        return (response.documents[0] as unknown as Product) || null;
     } catch (error) {
         console.error('Error fetching product:', error);
         return null;

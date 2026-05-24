@@ -158,9 +158,10 @@ export const SmartSearch: React.FC<SmartSearchProps> = ({ isOpen, onClose }) => 
 
     const suggestions = ['Amethyst', 'Blue Topaz', 'Ring', 'Silver', 'Gift'];
 
+    const escapeRegex = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     const HighlightText = ({ text, highlight }: { text: string, highlight: string }) => {
         if (!highlight.trim()) return <>{text}</>;
-        const parts = text.split(new RegExp(`(${highlight})`, 'gi'));
+        const parts = text.split(new RegExp(`(${escapeRegex(highlight)})`, 'gi'));
         return (
             <>
                 {parts.map((part, i) =>

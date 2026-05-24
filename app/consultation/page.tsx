@@ -13,10 +13,18 @@ const ConsultationPage : React.FC = () => {
     });
     const [isSubmitted, setIsSubmitted] = useState(false);
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        // Simulate form submission
-        setTimeout(() => setIsSubmitted(true), 1000);
+        try {
+            await fetch('/api/consultation', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData),
+            });
+        } catch (err) {
+            console.error('Consultation submit error:', err);
+        }
+        setIsSubmitted(true);
     };
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {

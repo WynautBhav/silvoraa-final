@@ -1,58 +1,42 @@
-import type { Metadata } from 'next';
-import React from 'react';
+"use client";
+import React, { useMemo } from 'react';
 import Link from 'next/link';
 
 import { PRODUCTS, STONES } from '@/constants';
 import { StoneType } from '@/types';
 import { ChevronRight, ArrowRight, Gem, Sparkles } from 'lucide-react';
 
-export const metadata: Metadata = {
-  title: 'Gemstone Collections',
-  description: 'Explore our curated gemstone collections — Amethyst for calm, Citrine for abundance, Blue Topaz for clarity. Handcrafted 925 sterling silver jewelry for every intention.',
-  alternates: { canonical: 'https://www.silvoraa.com/collections' },
-  openGraph: {
-    title: 'Gemstone Collections | Silvoraa',
-    description: 'Explore our curated gemstone collections.',
-    url: 'https://www.silvoraa.com/collections',
-    images: [{ url: 'https://www.silvoraa.com/images/og-home.jpg', width: 1200, height: 630, alt: 'Gemstone Collections | Silvoraa' }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Gemstone Collections | Silvoraa',
-    description: 'Explore our curated gemstone collections.',
-    images: ['https://www.silvoraa.com/images/og-home.jpg'],
-  },
-};
-
 const CollectionsPage : React.FC = () => {
     // Group products by stone type and get counts
-    const stoneGroups: Record<string, { count: number; stone: typeof STONES[0] | undefined }> = {};
+    const collections = useMemo(() => {
+        const stoneGroups: Record<string, { count: number; stone: typeof STONES[0] | undefined }> = {};
 
-    PRODUCTS.forEach(product => {
-        let effectiveStone = product.stone;
+        PRODUCTS.forEach(product => {
+            let effectiveStone = product.stone;
 
-        // Club all Topaz variations under generic Topaz
-        if ([StoneType.BLUE_TOPAZ, StoneType.SKY_BLUE_TOPAZ, StoneType.LEMON_TOPAZ].includes(product.stone as StoneType)) {
-            effectiveStone = StoneType.TOPAZ;
-        }
+            // Club all Topaz variations under generic Topaz
+            if ([StoneType.BLUE_TOPAZ, StoneType.SKY_BLUE_TOPAZ, StoneType.LEMON_TOPAZ].includes(product.stone)) {
+                effectiveStone = StoneType.TOPAZ;
+            }
 
-        if (!stoneGroups[effectiveStone]) {
-            stoneGroups[effectiveStone] = {
-                count: 0,
-                stone: STONES.find(s => s.stone === effectiveStone)
-            };
-        }
-        stoneGroups[effectiveStone].count++;
-    });
+            if (!stoneGroups[effectiveStone]) {
+                stoneGroups[effectiveStone] = {
+                    count: 0,
+                    stone: STONES.find(s => s.stone === effectiveStone)
+                };
+            }
+            stoneGroups[effectiveStone].count++;
+        });
 
-    const collections = Object.entries(stoneGroups)
-        .map(([stoneType, data]) => ({
-            stoneType: stoneType as StoneType,
-            count: data.count,
-            stone: data.stone,
-            slug: stoneType.toLowerCase().replace(/ /g, '-')
-        }))
-        .sort((a, b) => b.count - a.count);
+        return Object.entries(stoneGroups)
+            .map(([stoneType, data]) => ({
+                stoneType: stoneType as StoneType,
+                count: data.count,
+                stone: data.stone,
+                slug: stoneType.toLowerCase().replace(/ /g, '-')
+            }))
+            .sort((a, b) => b.count - a.count);
+    }, []);
 
     // Premium gradient mapping for stones
     const getStoneGradient = (stoneType: StoneType): string => {

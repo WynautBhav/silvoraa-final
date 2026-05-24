@@ -215,16 +215,17 @@ export const STONES: StoneBenefit[] = [
   {
     id: '9',
     benefit: 'Creative Spark',
-    stone: StoneType.OPAL,
-    description: 'A delicate shifting light that invites creative expression, emotional harmony, and quiet hope.',
-    imageOverlayDescription: 'Traditionally associated with creativity, inspiration, and emotional balance.',
-    imageUrl: '/images/stone-items/Opal.png',
-    filterParam: 'opal'
+    stone: StoneType.CZ,
+    description: 'Brilliant clarity that sparks imagination and amplifies creative vision with every facet.',
+    imageOverlayDescription: 'Crafted for brilliance and clarity, reflecting a sharp, focused energy.',
+    imageUrl: '/images/stone-items/Cubic Zirconia.png',
+    filterParam: 'cz'
   }
 ];
 
 // Products imported from Shopify CSV
-export const PRODUCTS: Product[] = [
+export const PRODUCTS: Product[
+] = [
   {
     id: 'n1',
     title: 'Lunelle Cz Drop Nose Ring',
@@ -251,7 +252,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.CZ,
     variants: [],
     tags: ['cz', 'nose rings', 'silver'],
-    benefits: []
+    benefits: [],
   },
   {
     id: 'b2',
@@ -279,7 +280,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.ROSE_AMETHYST,
     variants: [],
     tags: ['blue sapphire', 'bracelets', 'rose amethyst', 'silver'],
-    benefits: ['Calm', 'Balance']
+    benefits: ['Calm', 'Balance'],
   },
   {
     id: 'r3',
@@ -307,7 +308,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.CZ,
     variants: [],
     tags: ['cz', 'earrings', 'silver'],
-    benefits: ['Balance']
+    benefits: ['Balance'],
   },
   {
     id: 'r4',
@@ -335,7 +336,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.CITRINE,
     variants: [],
     tags: ['citrine', 'earrings', 'silver'],
-    benefits: ['Balance', 'Clarity']
+    benefits: ['Balance', 'Clarity'],
   },
   {
     id: 'r5',
@@ -363,7 +364,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.BLUE_TOPAZ,
     variants: [],
     tags: ['blue sapphire', 'blue topaz', 'earrings', 'silver'],
-    benefits: ['Calm', 'Balance', 'Clarity']
+    benefits: ['Calm', 'Balance', 'Clarity'],
   },
   {
     id: 'r6',
@@ -391,7 +392,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.OPAL,
     variants: [],
     tags: ['earrings', 'opal', 'silver'],
-    benefits: ['Balance', 'Clarity']
+    benefits: ['Balance', 'Clarity'],
   },
   {
     id: 'r7',
@@ -419,7 +420,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.AMETHYST,
     variants: [],
     tags: ['amethyst', 'earrings', 'silver'],
-    benefits: ['Calm', 'Balance', 'Clarity']
+    benefits: ['Calm', 'Balance', 'Clarity'],
   },
   {
     id: 'p8',
@@ -447,7 +448,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.LAPIS,
     variants: [],
     tags: ['lapis lazuli', 'pendant', 'silver'],
-    benefits: ['Calm', 'Balance', 'Wisdom']
+    benefits: ['Calm', 'Balance', 'Wisdom'],
   },
   {
     id: 'p9',
@@ -475,7 +476,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.LAPIS,
     variants: [],
     tags: ['lapis lazuli', 'pendant', 'silver'],
-    benefits: ['Calm', 'Wisdom', 'Truth']
+    benefits: ['Calm', 'Wisdom', 'Truth'],
   },
   {
     id: 'p10',
@@ -517,7 +518,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.AMETHYST,
     variants: [],
     tags: ['amethyst', 'citrine', 'garnet', 'pendant', 'silver'],
-    benefits: ['Calm', 'Balance', 'Clarity']
+    benefits: ['Calm', 'Balance', 'Clarity'],
   },
   {
     id: 'p11',
@@ -545,7 +546,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.AMETHYST,
     variants: [],
     tags: ['amethyst', 'blue topaz', 'citrine', 'pendant', 'silver'],
-    benefits: ['Calm', 'Balance', 'Joy']
+    benefits: ['Calm', 'Balance', 'Joy'],
   },
   {
     id: 'p12',
@@ -573,7 +574,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.BLUE_TOPAZ,
     variants: [],
     tags: ['blue topaz', 'pendant', 'silver'],
-    benefits: ['Calm', 'Balance', 'Clarity']
+    benefits: ['Calm', 'Balance', 'Clarity'],
   },
   {
     id: 'p13',
@@ -596,7 +597,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.CZ,
     variants: [],
     tags: ['cubic zirconia', 'cz', 'pendant', 'silver'],
-    benefits: ['Balance', 'Clarity', 'Focus']
+    benefits: ['Balance', 'Clarity', 'Focus'],
   },
   {
     id: 'p14',
@@ -624,7 +625,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.EMERALD,
     variants: [],
     tags: ['emerald', 'pendant', 'silver'],
-    benefits: ['Calm', 'Balance', 'Harmony']
+    benefits: ['Calm', 'Balance', 'Harmony'],
   },
   {
     id: 'p15',
@@ -652,7 +653,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.AMETHYST,
     variants: [],
     tags: ['amethyst', 'pendant', 'silver'],
-    benefits: ['Calm', 'Balance', 'Focus']
+    benefits: ['Calm', 'Balance', 'Focus'],
   },
   {
     id: 'p16',
@@ -680,7 +681,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.CZ,
     variants: [],
     tags: ['cubic zirconia', 'cz', 'pendant', 'silver'],
-    benefits: ['Balance', 'Clarity', 'Focus']
+    benefits: ['Balance', 'Clarity', 'Focus'],
   },
   {
     id: 'p17',
@@ -708,7 +709,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.CITRINE,
     variants: [],
     tags: ['citrine', 'pendant', 'silver'],
-    benefits: ['Clarity', 'Abundance', 'Energy']
+    benefits: ['Clarity', 'Abundance', 'Energy'],
   },
   {
     id: 'p18',
@@ -736,7 +737,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.LEMON_TOPAZ,
     variants: [],
     tags: ['lemon topaz', 'pendant', 'silver'],
-    benefits: ['Balance', 'Clarity', 'Energy']
+    benefits: ['Balance', 'Clarity', 'Energy'],
   },
   {
     id: 'p19',
@@ -764,7 +765,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.CITRINE,
     variants: [],
     tags: ['citrine', 'pendant', 'silver'],
-    benefits: ['Clarity', 'Abundance', 'Energy']
+    benefits: ['Clarity', 'Abundance', 'Energy'],
   },
   {
     id: 'p20',
@@ -792,7 +793,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.CZ,
     variants: [],
     tags: ['cubic zirconia', 'cz', 'pendant', 'silver'],
-    benefits: ['Balance', 'Clarity', 'Focus']
+    benefits: ['Balance', 'Clarity', 'Focus'],
   },
   {
     id: 'p21',
@@ -820,7 +821,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.SKY_BLUE_TOPAZ,
     variants: [],
     tags: ['pendant', 'silver', 'sky blue topaz'],
-    benefits: ['Calm', 'Clarity']
+    benefits: ['Calm', 'Clarity'],
   },
   {
     id: 'p22',
@@ -848,7 +849,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.CZ,
     variants: [],
     tags: ['cubic zirconia', 'cz', 'pendant', 'silver'],
-    benefits: ['Balance', 'Clarity', 'Focus']
+    benefits: ['Balance', 'Clarity', 'Focus'],
   },
   {
     id: 'p23',
@@ -876,7 +877,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.LAPIS,
     variants: [],
     tags: ['lapis lazuli', 'pendant', 'silver'],
-    benefits: ['Calm', 'Wisdom', 'Truth']
+    benefits: ['Calm', 'Wisdom', 'Truth'],
   },
   {
     id: 'p24',
@@ -904,7 +905,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.LAPIS,
     variants: [],
     tags: ['lapis lazuli', 'pendant', 'silver'],
-    benefits: ['Calm', 'Wisdom', 'Truth']
+    benefits: ['Calm', 'Wisdom', 'Truth'],
   },
   {
     id: 'p25',
@@ -932,7 +933,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.LAPIS,
     variants: [],
     tags: ['lapis lazuli', 'pendant', 'silver'],
-    benefits: ['Calm', 'Wisdom', 'Truth']
+    benefits: ['Calm', 'Wisdom', 'Truth'],
   },
   {
     id: 'p26',
@@ -960,7 +961,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.BLUE_TOPAZ,
     variants: [],
     tags: ['blue topaz', 'pendant', 'silver'],
-    benefits: ['Calm', 'Balance', 'Clarity']
+    benefits: ['Calm', 'Balance', 'Clarity'],
   },
   {
     id: 'p27',
@@ -988,7 +989,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.CITRINE,
     variants: [],
     tags: ['citrine', 'pendant', 'silver'],
-    benefits: ['Clarity', 'Abundance', 'Energy']
+    benefits: ['Clarity', 'Abundance', 'Energy'],
   },
   {
     id: 'p28',
@@ -1016,7 +1017,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.AMETHYST,
     variants: [],
     tags: ['amethyst', 'pendant', 'silver'],
-    benefits: ['Calm', 'Balance', 'Focus']
+    benefits: ['Calm', 'Balance', 'Focus'],
   },
   {
     id: 'p29',
@@ -1044,7 +1045,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.SKY_BLUE_TOPAZ,
     variants: [],
     tags: ['pendant', 'silver', 'sky blue topaz'],
-    benefits: ['Calm', 'Clarity']
+    benefits: ['Calm', 'Clarity'],
   },
   {
     id: 'p30',
@@ -1072,7 +1073,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.CITRINE,
     variants: [],
     tags: ['citrine', 'pendant', 'silver'],
-    benefits: ['Balance', 'Clarity', 'Abundance']
+    benefits: ['Balance', 'Clarity', 'Abundance'],
   },
   {
     id: 'p31',
@@ -1100,7 +1101,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.LEMON_TOPAZ,
     variants: [],
     tags: ['lemon topaz', 'pendant', 'silver'],
-    benefits: ['Clarity', 'Energy', 'Optimism']
+    benefits: ['Clarity', 'Energy', 'Optimism'],
   },
   {
     id: 'p32',
@@ -1128,7 +1129,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.ROSE_QUARTZ,
     variants: [],
     tags: ['pendant', 'rose quartz', 'silver'],
-    benefits: ['Calm', 'Love', 'Harmony']
+    benefits: ['Calm', 'Love', 'Harmony'],
   },
   {
     id: 'p33',
@@ -1156,7 +1157,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.AMETHYST,
     variants: [],
     tags: ['amethyst', 'pendant', 'silver'],
-    benefits: ['Calm', 'Balance', 'Focus']
+    benefits: ['Calm', 'Balance', 'Focus'],
   },
   {
     id: 'p34',
@@ -1184,7 +1185,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.SKY_BLUE_TOPAZ,
     variants: [],
     tags: ['pendant', 'silver', 'sky blue topaz'],
-    benefits: ['Calm', 'Balance', 'Clarity']
+    benefits: ['Calm', 'Balance', 'Clarity'],
   },
   {
     id: 'p35',
@@ -1212,7 +1213,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.AMETHYST,
     variants: [],
     tags: ['amethyst', 'pendant', 'silver'],
-    benefits: ['Calm', 'Balance', 'Focus']
+    benefits: ['Calm', 'Balance', 'Focus'],
   },
   {
     id: 'p36',
@@ -1240,7 +1241,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.OPAL,
     variants: [],
     tags: ['opal', 'pendant', 'silver'],
-    benefits: ['Balance', 'Harmony', 'Creativity']
+    benefits: ['Balance', 'Harmony', 'Creativity'],
   },
   {
     id: 'p37',
@@ -1268,7 +1269,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.OPAL,
     variants: [],
     tags: ['opal', 'pendant', 'silver'],
-    benefits: ['Balance', 'Harmony', 'Creativity']
+    benefits: ['Balance', 'Harmony', 'Creativity'],
   },
   {
     id: 'p38',
@@ -1296,7 +1297,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.AMETHYST,
     variants: [],
     tags: ['amethyst', 'pendant', 'silver'],
-    benefits: ['Calm', 'Balance', 'Focus']
+    benefits: ['Calm', 'Balance', 'Focus'],
   },
   {
     id: 'p39',
@@ -1324,7 +1325,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.CITRINE,
     variants: [],
     tags: ['citrine', 'pendant', 'silver'],
-    benefits: ['Clarity', 'Abundance', 'Energy']
+    benefits: ['Clarity', 'Abundance', 'Energy'],
   },
   {
     id: 'p40',
@@ -1352,7 +1353,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.LABRADORITE,
     variants: [],
     tags: ['labradorite', 'pendant', 'silver'],
-    benefits: ['Calm', 'Protection', 'Intuition']
+    benefits: ['Calm', 'Protection', 'Intuition'],
   },
   {
     id: 'p41',
@@ -1380,7 +1381,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.CITRINE,
     variants: [],
     tags: ['citrine', 'pendant', 'silver'],
-    benefits: ['Clarity', 'Abundance', 'Energy']
+    benefits: ['Clarity', 'Abundance', 'Energy'],
   },
   {
     id: 'p42',
@@ -1408,7 +1409,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.LAPIS,
     variants: [],
     tags: ['lapis lazuli', 'pendant', 'silver'],
-    benefits: ['Calm', 'Balance', 'Wisdom']
+    benefits: ['Calm', 'Balance', 'Wisdom'],
   },
   {
     id: 'p43',
@@ -1436,7 +1437,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.CZ,
     variants: [],
     tags: ['cubic zirconia', 'cz', 'pendant', 'silver'],
-    benefits: ['Balance', 'Clarity', 'Focus']
+    benefits: ['Balance', 'Clarity', 'Focus'],
   },
   {
     id: 'p44',
@@ -1464,7 +1465,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.TOURMALINE,
     variants: [],
     tags: ['pendant', 'silver', 'tourmaline'],
-    benefits: ['Balance', 'Clarity', 'Renewal']
+    benefits: ['Balance', 'Clarity', 'Renewal'],
   },
   {
     id: 'r45',
@@ -1492,7 +1493,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.IOLITE,
     variants: [],
     tags: ['Iolite', 'ring', 'silver'],
-    benefits: ['Calm', 'Balance', 'Clarity']
+    benefits: ['Calm', 'Balance', 'Clarity'],
   },
   {
     id: 'r46',
@@ -1520,7 +1521,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.BLUE_TOPAZ,
     variants: [],
     tags: ['Blue Topaz', 'ring', 'silver', 'Topaz'],
-    benefits: ['Calm', 'Clarity', 'Energy']
+    benefits: ['Calm', 'Clarity', 'Energy'],
   },
   {
     id: 'r47',
@@ -1548,7 +1549,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.LEMON_TOPAZ,
     variants: [],
     tags: ['Lemon Topaz', 'ring', 'silver', 'Topaz'],
-    benefits: ['Balance', 'Clarity', 'Confidence']
+    benefits: ['Balance', 'Clarity', 'Confidence'],
   },
   {
     id: 'r48',
@@ -1576,7 +1577,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.AMETHYST,
     variants: [],
     tags: ['Amethyst', 'ring', 'silver'],
-    benefits: ['Calm', 'Balance', 'Clarity']
+    benefits: ['Calm', 'Balance', 'Clarity'],
   },
   {
     id: 'r49',
@@ -1604,7 +1605,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.IOLITE,
     variants: [],
     tags: ['Iolite', 'ring', 'silver'],
-    benefits: ['Calm', 'Clarity', 'Focus']
+    benefits: ['Calm', 'Clarity', 'Focus'],
   },
   {
     id: 'r50',
@@ -1632,7 +1633,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.GARNET,
     variants: [],
     tags: ['Garnet', 'ring', 'silver'],
-    benefits: ['Energy', 'Confidence']
+    benefits: ['Energy', 'Confidence'],
   },
   {
     id: 'r51',
@@ -1660,7 +1661,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.CITRINE,
     variants: [],
     tags: ['Citrine', 'Garnet', 'Iolite', 'Peridot', 'ring', 'silver'],
-    benefits: ['Calm', 'Balance', 'Clarity']
+    benefits: ['Calm', 'Balance', 'Clarity'],
   },
   {
     id: 'r52',
@@ -1688,7 +1689,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.AMETHYST,
     variants: [],
     tags: ['Amethyst', 'ring', 'silver'],
-    benefits: ['Calm', 'Balance', 'Clarity']
+    benefits: ['Calm', 'Balance', 'Clarity'],
   },
   {
     id: 'r53',
@@ -1716,7 +1717,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.AMETHYST,
     variants: [],
     tags: ['Amethyst', 'ring', 'silver'],
-    benefits: ['Calm', 'Balance', 'Clarity']
+    benefits: ['Calm', 'Balance', 'Clarity'],
   },
   {
     id: 'r54',
@@ -1744,7 +1745,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.CZ,
     variants: [],
     tags: ['cubic zirconia', 'cz', 'ring', 'silver', 'Zarkan'],
-    benefits: []
+    benefits: [],
   },
   {
     id: 'r55',
@@ -1772,7 +1773,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.AMETHYST,
     variants: [],
     tags: ['amethyst', 'ring', 'silver'],
-    benefits: ['Calm', 'Balance', 'Clarity']
+    benefits: ['Calm', 'Balance', 'Clarity'],
   },
   {
     id: 'r56',
@@ -1800,7 +1801,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.TOURMALINE,
     variants: [],
     tags: ['ring', 'silver', 'tourmaline'],
-    benefits: ['Balance', 'Energy', 'Confidence']
+    benefits: ['Balance', 'Energy', 'Confidence'],
   },
   {
     id: 'r57',
@@ -1828,7 +1829,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.TOURMALINE,
     variants: [],
     tags: ['ring', 'silver', 'tourmaline'],
-    benefits: ['Balance', 'Harmony', 'Creativity']
+    benefits: ['Balance', 'Harmony', 'Creativity'],
   },
   {
     id: 'r58',
@@ -1856,7 +1857,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.AMETHYST,
     variants: [],
     tags: ['Amethyst', 'ring', 'silver'],
-    benefits: ['Calm', 'Balance', 'Clarity']
+    benefits: ['Calm', 'Balance', 'Clarity'],
   },
   {
     id: 'r59',
@@ -1884,7 +1885,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.AMETHYST,
     variants: [],
     tags: ['Amethyst', 'ring', 'silver'],
-    benefits: ['Calm', 'Balance', 'Clarity']
+    benefits: ['Calm', 'Balance', 'Clarity'],
   },
   {
     id: 'r60',
@@ -1912,7 +1913,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.CITRINE,
     variants: [],
     tags: ['Citrine', 'ring', 'silver'],
-    benefits: ['Confidence', 'Optimism']
+    benefits: ['Confidence', 'Optimism'],
   },
   {
     id: 'r61',
@@ -1940,7 +1941,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.TOURMALINE,
     variants: [],
     tags: ['ring', 'silver', 'tourmaline'],
-    benefits: ['Balance', 'Confidence']
+    benefits: ['Balance', 'Confidence'],
   },
   {
     id: 'r62',
@@ -1968,7 +1969,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.GARNET,
     variants: [],
     tags: ['Garnet', 'ring', 'silver'],
-    benefits: ['Balance', 'Energy']
+    benefits: ['Balance', 'Energy'],
   },
   {
     id: 'r63',
@@ -1996,7 +1997,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.BLUE_TOPAZ,
     variants: [],
     tags: ['Blue Topaz', 'ring', 'silver'],
-    benefits: ['Calm', 'Balance', 'Clarity']
+    benefits: ['Calm', 'Balance', 'Clarity'],
   },
   {
     id: 'r64',
@@ -2024,7 +2025,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.CITRINE,
     variants: [],
     tags: ['Citrine', 'ring', 'silver'],
-    benefits: ['Clarity', 'Focus', 'Abundance']
+    benefits: ['Clarity', 'Focus', 'Abundance'],
   },
   {
     id: 'r65',
@@ -2052,7 +2053,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.BLUE_TOPAZ,
     variants: [],
     tags: ['Blue Topaz', 'ring', 'silver'],
-    benefits: ['Calm', 'Balance', 'Clarity']
+    benefits: ['Calm', 'Balance', 'Clarity'],
   },
   {
     id: 'r66',
@@ -2080,7 +2081,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.BLUE_TOPAZ,
     variants: [],
     tags: ['Blue Topaz', 'ring', 'silver'],
-    benefits: ['Calm', 'Clarity', 'Confidence']
+    benefits: ['Calm', 'Clarity', 'Confidence'],
   },
   {
     id: 'r67',
@@ -2108,7 +2109,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.AMETHYST,
     variants: [],
     tags: ['Amethyst', 'ring', 'silver'],
-    benefits: ['Calm', 'Balance', 'Clarity']
+    benefits: ['Calm', 'Balance', 'Clarity'],
   },
   {
     id: 'r68',
@@ -2136,7 +2137,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.GARNET,
     variants: [],
     tags: ['Garnet', 'ring', 'silver'],
-    benefits: ['Balance', 'Energy']
+    benefits: ['Balance', 'Energy'],
   },
   {
     id: 'r69',
@@ -2164,7 +2165,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.GARNET,
     variants: [],
     tags: ['Garnet', 'ring', 'silver'],
-    benefits: ['Balance', 'Confidence']
+    benefits: ['Balance', 'Confidence'],
   },
   {
     id: 'r70',
@@ -2192,7 +2193,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.AMETHYST,
     variants: [],
     tags: ['Amethyst', 'ring', 'silver'],
-    benefits: ['Calm', 'Balance', 'Clarity']
+    benefits: ['Calm', 'Balance', 'Clarity'],
   },
   {
     id: 'r71',
@@ -2220,7 +2221,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.TOURMALINE,
     variants: [],
     tags: ['ring', 'silver', 'tourmaline'],
-    benefits: ['Balance', 'Joy', 'Harmony']
+    benefits: ['Balance', 'Joy', 'Harmony'],
   },
   {
     id: 'r72',
@@ -2248,7 +2249,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.CITRINE,
     variants: [],
     tags: ['Citrine', 'ring', 'silver'],
-    benefits: ['Balance', 'Clarity', 'Confidence']
+    benefits: ['Balance', 'Clarity', 'Confidence'],
   },
   {
     id: 'r73',
@@ -2276,7 +2277,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.TOURMALINE,
     variants: [],
     tags: ['ring', 'silver', 'Tourmaline'],
-    benefits: ['Balance', 'Harmony']
+    benefits: ['Balance', 'Harmony'],
   },
   {
     id: 'r74',
@@ -2304,7 +2305,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.ROSE_QUARTZ,
     variants: [],
     tags: ['ring', 'Rose', 'Rose quartz', 'silver'],
-    benefits: ['Calm', 'Balance', 'Harmony']
+    benefits: ['Calm', 'Balance', 'Harmony'],
   },
   {
     id: 'r75',
@@ -2332,7 +2333,7 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.CITRINE,
     variants: [],
     tags: ['Citrine', 'ring', 'silver'],
-    benefits: ['Clarity', 'Confidence', 'Optimism']
+    benefits: ['Clarity', 'Confidence', 'Optimism'],
   },
   {
     id: 'r76',
@@ -2360,6 +2361,6 @@ export const PRODUCTS: Product[] = [
     stone: StoneType.AMETHYST,
     variants: [],
     tags: ['Amethyst', 'ring', 'silver'],
-    benefits: ['Calm', 'Balance', 'Confidence']
+    benefits: ['Calm', 'Balance', 'Confidence'],
   },
 ];

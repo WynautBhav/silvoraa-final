@@ -3,7 +3,7 @@ import { GoogleGenAI } from "@google/genai";
 let client: GoogleGenAI | null = null;
 
 const getClient = () => {
-  const apiKey = process.env.NEXT_PUBLIC_GEMINI_API_KEY || process.env.API_KEY;
+  const apiKey = process.env.GEMINI_API_KEY;
   if (!client && apiKey && apiKey !== 'PLACEHOLDER_API_KEY') {
     client = new GoogleGenAI({ apiKey });
   }
@@ -35,7 +35,7 @@ export const generateSmartImage = async (
 
   try {
     const response = await ai.models.generateContent({
-      model: 'gemini-2.5-flash-image', // Assuming this model exists/is available
+      model: 'gemini-2.0-flash-exp-image-generation',
       contents: prompt,
       config: {
         imageConfig: {

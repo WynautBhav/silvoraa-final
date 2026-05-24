@@ -164,10 +164,10 @@ export default function OrderDetailsPage() {
                         <h2 className="font-medium text-gray-900 mb-4 flex items-center gap-2"><MapPin className="w-4 h-4 text-gray-400" /> Shipping Address</h2>
                         {order.shipping_address ? (
                             <div className="text-sm text-gray-600 leading-relaxed">
-                                <p className="font-medium text-gray-900">{order.shipping_address.fullName}</p>
-                                <p>{order.shipping_address.addressLine1}</p>
-                                {order.shipping_address.addressLine2 && <p>{order.shipping_address.addressLine2}</p>}
-                                <p>{order.shipping_address.city}, {order.shipping_address.state} {order.shipping_address.postalCode}</p>
+                                <p className="font-medium text-gray-900">{(order.shipping_address as any).full_name || order.shipping_address.fullName}</p>
+                                <p>{(order.shipping_address as any).street || order.shipping_address.addressLine1}</p>
+                                {(order.shipping_address.addressLine2) && <p>{order.shipping_address.addressLine2}</p>}
+                                <p>{order.shipping_address.city}, {order.shipping_address.state} {(order.shipping_address as any).zip || order.shipping_address.postalCode}</p>
                                 <p>{order.shipping_address.country}</p>
                                 <p className="mt-2 text-gray-500">{order.shipping_address.phone}</p>
                             </div>

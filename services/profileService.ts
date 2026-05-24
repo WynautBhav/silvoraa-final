@@ -13,12 +13,12 @@ interface Profile {
 
 export const getProfile = async (userId: string): Promise<Profile | null> => {
     try {
-        const response = await databases.listDocuments(
+        const response = await databases.getDocument(
             APPWRITE_CONFIG.databaseId,
             APPWRITE_CONFIG.usersCollectionId,
-            [Query.equal("$id", userId)]
+            userId
         );
-        return response.documents[0] as unknown as Profile || null;
+        return response as unknown as Profile;
     } catch (error) {
         console.error('Error fetching profile:', error);
         return null;
@@ -44,7 +44,7 @@ export const getWishlist = async (userId: string) => {
     try {
         const response = await databases.listDocuments(
             APPWRITE_CONFIG.databaseId,
-            'wishlist',
+            APPWRITE_CONFIG.wishlistCollectionId,
             [Query.equal("user_id", userId)]
         );
         return response.documents;
@@ -58,7 +58,7 @@ export const addToWishlist = async (userId: string, productId: string) => {
     try {
         const response = await databases.createDocument(
             APPWRITE_CONFIG.databaseId,
-            'wishlist',
+            APPWRITE_CONFIG.wishlistCollectionId,
             'unique()',
             {
                 user_id: userId,
@@ -80,14 +80,14 @@ export const removeFromWishlist = async (userId: string, productId: string) => {
     try {
         const response = await databases.listDocuments(
             APPWRITE_CONFIG.databaseId,
-            'wishlist',
+            APPWRITE_CONFIG.wishlistCollectionId,
             [Query.equal("user_id", userId), Query.equal("product_id", productId)]
         );
 
         if (response.documents.length > 0) {
             await databases.deleteDocument(
                 APPWRITE_CONFIG.databaseId,
-                'wishlist',
+                APPWRITE_CONFIG.wishlistCollectionId,
                 response.documents[0].$id
             );
         }
@@ -102,7 +102,7 @@ export const isInWishlist = async (userId: string, productId: string): Promise<b
     try {
         const response = await databases.listDocuments(
             APPWRITE_CONFIG.databaseId,
-            'wishlist',
+            APPWRITE_CONFIG.wishlistCollectionId,
             [Query.equal("user_id", userId), Query.equal("product_id", productId)]
         );
         return response.documents.length > 0;

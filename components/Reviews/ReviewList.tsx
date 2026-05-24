@@ -30,6 +30,16 @@ export const ReviewList: React.FC<ReviewListProps> = ({ productId }) => {
                     setTotalReviews(data.length);
                     setAvgRating(data.reduce((acc, r) => acc + r.rating, 0) / data.length);
                 }
+                // Fetch actual total count
+                if (productId) {
+                    const { data: countData } = await supabase
+                        .from('reviews')
+                        .select('id')
+                        .eq('product_id', productId);
+                    if (countData && countData.length > data?.length) {
+                        setTotalReviews(countData.length);
+                    }
+                }
             } catch (err) {
                 console.error('Error fetching reviews:', err);
             } finally {

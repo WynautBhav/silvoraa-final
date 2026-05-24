@@ -102,10 +102,11 @@ export const useProducts = (options: UseProductsOptions = {}): UseProductsReturn
                 if (options.stone) {
                     query = query.eq('stone', options.stone);
                 }
-                if (options.search) {
-                    const searchT = `%${options.search}%`;
-                    query = query.or(`title.ilike.${searchT},stone.ilike.${searchT},type.ilike.${searchT},tags.cs.{${options.search}}`);
-                }
+            if (options.search) {
+              const sanitized = options.search.replace(/[%_]/g, '').replace(/[{}()]/g, '');
+              const searchT = `%${sanitized}%`;
+              query = query.or(`title.ilike.${searchT},stone.ilike.${searchT},type.ilike.${searchT}`);
+            }
                 if (options.limit) {
                     query = query.limit(options.limit);
                 }
@@ -130,8 +131,8 @@ export const useProducts = (options: UseProductsOptions = {}): UseProductsReturn
                             handle: p.handle,
                             price: p.price,
                             description: p.description || '',
-                            image: p.image.replace(/\.[^.]+$/, '.webp'),
-                            images: (p.images || [p.image]).map((img: string) => img.replace(/\.[^.]+$/, '.webp')),
+                            image: p.image ? p.image.replace(/\.[^.]+$/, '.webp') : '',
+                            images: (p.images && p.images.length > 0 ? p.images : p.image ? [p.image] : []).map((img: string) => img.replace(/\.[^.]+$/, '.webp')),
                             type: p.type as Product['type'],
                             stone: p.stone as Product['stone'],
                             variants: (p.variants as unknown as Product['variants']) || [],
@@ -247,8 +248,8 @@ export const useProduct = (handle: string) => {
                         handle: data.handle,
                         price: finalPrice,
                         description: data.description || '',
-                        image: data.image.replace(/\.[^.]+$/, '.webp'),
-                        images: (data.images || [data.image]).map((img: string) => img.replace(/\.[^.]+$/, '.webp')),
+                        image: data.image ? data.image.replace(/\.[^.]+$/, '.webp') : '',
+                        images: (data.images && data.images.length > 0 ? data.images : data.image ? [data.image] : []).map((img: string) => img.replace(/\.[^.]+$/, '.webp')),
                         type: data.type as Product['type'],
                         stone: data.stone as Product['stone'],
                         variants: (data.variants as unknown as Product['variants']) || [],

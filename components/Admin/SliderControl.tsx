@@ -1,6 +1,7 @@
+'use client';
 import React from 'react';
-
-interface SliderControlProps {
+ 
+ interface SliderControlProps {
     label: string;
     value: number;
     min: number;

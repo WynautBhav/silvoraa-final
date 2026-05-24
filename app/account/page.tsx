@@ -14,7 +14,10 @@ const AccountPage : React.FC = () => {
     const [tempName, setTempName] = useState('');
     const fileInputRef = useRef<HTMLInputElement>(null);
 
-    if (!user) return null;
+    if (!user) {
+        // Will be handled by useEffect redirect in a client component
+        return null;
+    }
 
     // Handlers
     const handleAvatarClick = () => {
@@ -216,7 +219,7 @@ const AccountPage : React.FC = () => {
                                                             <p className="text-xs text-gray-400 uppercase">{item.product.stone}</p>
                                                             {order.status === 'delivered' && (
                                                                 <Link
-                                                                    href={`/products/${item.product.handle}#reviews`}
+                                                                    href={`/product/${item.product.handle}#reviews`}
                                                                     className="text-[10px] font-bold uppercase tracking-widest text-silvoraa-gold hover:underline flex items-center gap-1 mt-1"
                                                                 >
                                                                     <Star className="w-3 h-3" /> Write Review

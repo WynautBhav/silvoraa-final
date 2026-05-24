@@ -100,8 +100,16 @@ const CheckoutPage : React.FC = () => {
                 // Update order status to processing (simulating payment success)
                 await orderService.updateOrderStatus(order.id, 'confirmed');
             } else {
-                // Fire purchase event for guest checkout
-                const transactionId = `guest_${Date.now()}`;
+                const order: any = await orderService.createOrder(
+                    'guest',
+                    orderItems,
+                    shippingAddress,
+                    'card',
+                    cartTotal,
+                    tax,
+                    shipping
+                );
+                const transactionId = order?.id || `guest_${Date.now()}`;
                 const gaItems: GAItem[] = items.map(item => ({
                     item_id: item.product.id,
                     item_name: item.product.title,
@@ -110,6 +118,9 @@ const CheckoutPage : React.FC = () => {
                     quantity: item.quantity,
                 }));
                 trackPurchase(transactionId, total, gaItems);
+                if (order?.id) {
+                    await orderService.updateOrderStatus(order.id, 'confirmed');
+                }
             }
 
             // Clear cart and redirect

@@ -71,6 +71,12 @@ export const createOrder = async (
     }
 };
 
+const parseOrder = (doc: any): Order => ({
+    ...doc,
+    items: typeof doc.items === 'string' ? JSON.parse(doc.items) : doc.items,
+    shipping_address: typeof doc.shipping_address === 'string' ? JSON.parse(doc.shipping_address) : doc.shipping_address,
+});
+
 export const getUserOrders = async (userId: string) => {
     try {
         const response = await databases.listDocuments(
@@ -78,7 +84,7 @@ export const getUserOrders = async (userId: string) => {
             APPWRITE_CONFIG.ordersCollectionId,
             [Query.equal("user_id", userId)]
         );
-        return response.documents as unknown as Order[];
+        return response.documents.map(parseOrder) as unknown as Order[];
     } catch (error) {
         console.error('Error fetching orders:', error);
         throw error;
@@ -92,7 +98,7 @@ export const getOrderById = async (orderId: string) => {
             APPWRITE_CONFIG.ordersCollectionId,
             orderId
         );
-        return response as unknown as Order;
+        return parseOrder(response) as unknown as Order;
     } catch (error) {
         console.error('Error fetching order:', error);
         throw error;
@@ -168,7 +174,7 @@ export const getOrderStats = async () => {
             APPWRITE_CONFIG.ordersCollectionId,
             [Query.limit(5000)]
         );
-        const orders = response.documents as unknown as Order[];
+        const orders = response.documents.map(parseOrder) as unknown as Order[];
         
         const stats = {
             total: orders.length,

@@ -227,10 +227,10 @@ const analyzeQuery = (query: string): QueryAnalysis => {
         // If "no amethyst" was detected, it might have accidentally caught "rose amethyst". 
         // But usually "no amethyst" means no purple. 
         // Let's refine: If "rose amethyst" is present, ensure we handle it specifically.
-        // Existing logic:
         const index = stones.indexOf(StoneType.AMETHYST);
         if (index > -1) stones.splice(index, 1);
-        if (!stones.includes(StoneType.ROSE_AMETHYST) && !excludedStones.includes(StoneType.ROSE_AMETHYST) && !regexIsNegated('rose amethyst', lowerQuery)) {
+        const roseIndex = stones.indexOf(StoneType.ROSE_AMETHYST);
+        if (roseIndex === -1 && !excludedStones.includes(StoneType.ROSE_AMETHYST) && !regexIsNegated('rose amethyst', lowerQuery)) {
             stones.push(StoneType.ROSE_AMETHYST);
         }
     }
@@ -246,7 +246,7 @@ const analyzeQuery = (query: string): QueryAnalysis => {
         // Handle "ring" vs "earring" collision
         if (type === ProductType.RING && lowerQuery.includes('earring')) return;
 
-        if (lowerQuery.includes(type.toLowerCase()) || (type === ProductType.PENDANT && lowerQuery.includes('necklace'))) {
+        if (lowerQuery.includes(type.toLowerCase())) {
             types.push(type);
         }
     });
@@ -385,8 +385,8 @@ export const findMatchingProducts = (query: string, context?: SearchContext): Sc
 
     PRODUCTS.forEach(product => {
         // 0. NEGATIVE FILTER (New)
-        if (activeExclusions.some(ex => product.stone.toLowerCase() === ex.toLowerCase())) {
-            return; // Skip excluded stones
+        if (!product.stone || activeExclusions.some(ex => product.stone.toLowerCase() === ex.toLowerCase())) {
+            return;
         }
 
         let score = 0;
@@ -400,7 +400,7 @@ export const findMatchingProducts = (query: string, context?: SearchContext): Sc
         }
 
         if (activeStones.length > 0) {
-            const matchesStone = activeStones.some(s => product.stone.toLowerCase() === s.toLowerCase());
+            const matchesStone = activeStones.some(s => product.stone && product.stone.toLowerCase() === s.toLowerCase());
             if (!matchesStone) return;
         }
 
@@ -415,7 +415,7 @@ export const findMatchingProducts = (query: string, context?: SearchContext): Sc
 
         // 1. Exact Stone Match
         for (const stoneVal of Object.values(StoneType)) {
-            if (lowerQuery.includes(stoneVal.toLowerCase()) && product.stone.toLowerCase() === stoneVal.toLowerCase()) {
+            if (lowerQuery.includes(stoneVal.toLowerCase()) && product.stone && product.stone.toLowerCase() === stoneVal.toLowerCase()) {
                 score += 60;
                 reasons.push(`features **${product.stone}**`);
                 break;
@@ -464,7 +464,7 @@ export const findMatchingProducts = (query: string, context?: SearchContext): Sc
                 // Boost matching Types
                 if (data.types?.some(t => product.type.includes(t))) score += 15;
                 // Boost matching Keywords/Stones
-                if (data.keywords.some(k => product.title.toLowerCase().includes(k) || product.stone.toLowerCase().includes(k) || product.tags.some(tag => tag.toLowerCase().includes(k)))) {
+                if (data.keywords.some(k => product.title.toLowerCase().includes(k) || (product.stone && product.stone.toLowerCase().includes(k)) || (product.tags && product.tags.some(tag => tag.toLowerCase().includes(k))))) {
                     score += 25;
                     reasons.push(`is perfect for a **${occasion}**`);
                 }
@@ -538,20 +538,24 @@ export const generateStylistResponse = (query: string, history: ChatMessage[] = 
     // 3. Dynamic Response Construction
 
     // Handling "Gift" specifically
+    const primaryReason = primary.matchReason.length > 0 ? primary.matchReason[0] : 'is a best-seller';
+
     if (lowerQuery.includes('gift')) {
-        return `For a gift, the **${primary.product.title}** is an exquisite choice. It ${primary.matchReason[0] || 'is a best-seller'} which makes it very special. It comes in our signature packaging, ready to impress!`;
+        return `For a gift, the **${primary.product.title}** is an exquisite choice. It ${primaryReason} which makes it very special. It comes in our signature packaging, ready to impress!`;
     }
 
     // Handling "Under $X" specifically
     if (activePrice) {
-        return `I found something perfect within your budget! The **${primary.product.title}** is a stunning piece that ${primary.matchReason[0]}. It's a great value for real ${primary.product.stone}.`;
+        return `I found something perfect within your budget! The **${primary.product.title}** is a stunning piece that ${primaryReason}. It's a great value for real ${primary.product.stone}.`;
     }
 
     // Standard Smart Response
+    const filteredReasons = primary.matchReason.filter(r => !r.includes('features'));
+    const reasonsText = filteredReasons.length > 0 ? filteredReasons.join(' and ') : primaryReason;
     const templates = [
-        `I'd highly recommend the **${primary.product.title}**. It ${primary.matchReason.filter(r => !r.includes('features')).join(' and ')}.`,
-        `The **${primary.product.title}** captures exactly what you're looking for. It ${primary.matchReason[0]} and has a real presence.`,
-        `You matched with the **${primary.product.title}**! It specifically ${primary.matchReason[0]}.`
+        `I'd highly recommend the **${primary.product.title}**. It ${reasonsText}.`,
+        `The **${primary.product.title}** captures exactly what you're looking for. It ${primaryReason} and has a real presence.`,
+        `You matched with the **${primary.product.title}**! It specifically ${primaryReason}.`
     ];
 
     let text = templates[Math.floor(Math.random() * templates.length)];
