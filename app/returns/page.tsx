@@ -136,13 +136,13 @@ const ReturnsPage : React.FC = () => {
                         </h2>
                         <div className="pl-11 space-y-4 text-gray-600 leading-relaxed">
                             <ul className="space-y-3">
-                                <li className="flex items-center gap-3">
-                                    <span className="w-2 h-2 rounded-full bg-green-500 flex-shrink-0" />
-                                    <span className="whitespace-nowrap">Acknowledged within <strong>48 hours</strong></span>
+                                <li className="flex items-start gap-3">
+                                    <span className="w-2 h-2 rounded-full bg-green-500 mt-2 flex-shrink-0" />
+                                    <span>Acknowledged within <strong>48 hours</strong></span>
                                 </li>
-                                <li className="flex items-center gap-3">
-                                    <span className="w-2 h-2 rounded-full bg-green-500 flex-shrink-0" />
-                                    <span className="whitespace-nowrap">Resolved within <strong>5-7 business days</strong></span>
+                                <li className="flex items-start gap-3">
+                                    <span className="w-2 h-2 rounded-full bg-green-500 mt-2 flex-shrink-0" />
+                                    <span>Resolved within <strong>5-7 business days</strong></span>
                                 </li>
                             </ul>
                         </div>
