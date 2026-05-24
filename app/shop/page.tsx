@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import ShopPageClient from './ShopPageClient';
 
 export const metadata: Metadata = {
-  title: 'Shop All | Silvoraa',
+  title: 'Shop All',
   description: 'Browse our complete collection of 925 sterling silver gemstone jewelry — Amethyst, Topaz, Citrine, Garnet, and more. Handcrafted in India.',
   alternates: { canonical: 'https://www.silvoraa.com/shop' },
   openGraph: {

@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import AuthenticityClient from './AuthenticityClient';
 
 export const metadata: Metadata = {
-  title: 'Authenticity Guarantee | Silvoraa',
+  title: 'Authenticity Guarantee',
   description: 'Every Silvoraa piece comes with authenticity certification. GIA certified gemstones, 925 sterling silver, and lifetime warranty.',
   alternates: { canonical: 'https://www.silvoraa.com/authenticity' },
   openGraph: {

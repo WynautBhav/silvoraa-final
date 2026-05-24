@@ -15,7 +15,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   const cleanDescription = product.description
-    ? product.description.replace(/<[^>]*>/g, '').substring(0, 155).trim()
+    ? product.description
+        .replace(/<[^>]*>/g, '')
+        .replace(/^(Description|Product Features|Benefits):\s*/i, '')
+        .trim()
+        .substring(0, 155)
+        .trim()
     : `Shop ${product.title} — a handcrafted ${product.type.toLowerCase()} featuring ${product.stone}. Premium 925 sterling silver.`;
 
   return {
@@ -42,14 +47,14 @@ function productSchema(product: typeof PRODUCTS[0]) {
     '@context': 'https://schema.org',
     '@type': 'Product',
     name: product.title,
-    description: product.description?.replace(/<[^>]*>/g, '').substring(0, 300).trim() || `${product.title} by Silvoraa`,
+    description: product.description?.replace(/<[^>]*>/g, '').replace(/^(Description|Product Features|Benefits):\s*/i, '').trim().substring(0, 300).trim() || `${product.title} by Silvoraa`,
     image: product.images?.length ? product.images.map((i: string) => `https://www.silvoraa.com${i}`) : [`https://www.silvoraa.com${product.image}`],
     brand: { '@type': 'Brand', name: 'Silvoraa' },
     offers: {
       '@type': 'AggregateOffer',
       priceCurrency: 'INR',
-      lowPrice: Math.min(...product.variants.map(v => v.price)),
-      highPrice: Math.max(...product.variants.map(v => v.price)),
+      lowPrice: product.variants.length > 0 ? Math.min(...product.variants.map(v => v.price)) : product.price,
+      highPrice: product.variants.length > 0 ? Math.max(...product.variants.map(v => v.price)) : product.price,
       availability: 'https://schema.org/InStock',
       url: `https://www.silvoraa.com/product/${product.handle}`,
     },

@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import BlogClient from './BlogClient';
 
 export const metadata: Metadata = {
-  title: 'Gemstone Blog | Silvoraa',
+  title: 'Gemstone Blog',
   description: 'Discover gemstone healing properties, birthstone meanings, and jewelry care tips from the Silvoraa gemstone guide.',
   alternates: { canonical: 'https://www.silvoraa.com/blog' },
   openGraph: {
