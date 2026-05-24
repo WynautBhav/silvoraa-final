@@ -26,8 +26,8 @@ export function Footer() {
                         <address className="text-gray-400 text-sm not-italic mb-2">
                             Silvoraa Jewelry, Jaipur, Rajasthan, India
                         </address>
-                        <a href="mailto:hello@silvoraa.com" className="text-silvoraa-gold text-sm hover:underline mb-6 block">
-                            hello@silvoraa.com
+                        <a href="mailto:silvoraa.work@gmail.com" className="text-silvoraa-gold text-sm hover:underline mb-6 block">
+                            silvoraa.work@gmail.com
                         </a>
                         {/* Social Links */}
                         <div className="flex items-center gap-4">

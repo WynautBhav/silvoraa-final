@@ -142,8 +142,8 @@ export default function ContactClient() {
                 </div>
                 <div>
                   <h3 className="text-base font-serif text-stone-800 mb-1">Email</h3>
-                  <a href="mailto:hello@silvoraa.com" className="text-stone-500 hover:text-silvoraa-gold transition-colors text-sm">
-                    hello@silvoraa.com
+                  <a href="mailto:silvoraa.work@gmail.com" className="text-stone-500 hover:text-silvoraa-gold transition-colors text-sm">
+                    silvoraa.work@gmail.com
                   </a>
                   <br />
                   <a href="mailto:support@silvoraa.com" className="text-stone-500 hover:text-silvoraa-gold transition-colors text-sm">

@@ -89,9 +89,9 @@ const TermsPage : React.FC = () => {
                         </h2>
                         <div className="pl-11 space-y-4 text-gray-600 leading-relaxed">
                             <ul className="list-disc pl-5 space-y-2 marker:text-silvoraa-gold">
-                                <li>Returns are accepted only for products that arrive damaged, defective, or incorrect, and must be reported within 3 days of delivery.</li>
+                                <li>Returns are accepted only for products that arrive damaged, defective, or incorrect, and must be reported within 24 hours of delivery.</li>
                                 <li>Items that are customized, personalized, or made to order are not eligible for return or exchange.</li>
-                                <li>Once a return is approved and received, refunds are processed to the original payment method within 7–14 business days. Exchanges are subject to stock availability.</li>
+                                <li>Once a return is approved and received, refunds are processed to the original payment method within 7 to 14 business days. Exchanges are subject to stock availability.</li>
                             </ul>
                         </div>
                     </section>
@@ -103,7 +103,7 @@ const TermsPage : React.FC = () => {
                         </h2>
                         <div className="pl-11 space-y-4 text-gray-600 leading-relaxed">
                             <p>You agree to use our website responsibly and not engage in any activity that is unlawful, harmful, or disruptive.</p>
-                            <p>All content on this website—including images, text, logos, and design elements—is the intellectual property of Silvoraa and may not be copied, reproduced, or used without prior written permission.</p>
+                            <p>All content on this website including images, text, logos, and design elements is the intellectual property of Silvoraa and may not be copied, reproduced, or used without prior written permission.</p>
                         </div>
                     </section>
 

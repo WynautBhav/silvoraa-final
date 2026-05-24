@@ -26,7 +26,7 @@ const AboutPage : React.FC = () => {
             
 
             {/* Hero Section */}
-            <h1 className="sr-only">About Silvoraa Jewelry - Our Story and Values</h1>
+            <h1 className="sr-only">About Silvoraa Jewelry: Our Story and Values</h1>
             <section className="relative min-h-screen flex items-center justify-center overflow-hidden -mt-16 py-24">
                 <motion.div
                     className="text-center px-6 max-w-3xl mx-auto"

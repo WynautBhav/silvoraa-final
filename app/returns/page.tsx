@@ -108,7 +108,7 @@ const ReturnsPage : React.FC = () => {
                                     <li>Forward or return shipping charges, where applicable</li>
                                 </ul>
                             </div>
-                            <p>Approved refunds are processed within <strong>5–7 business days</strong> to the original payment method.</p>
+                            <p>Approved refunds are processed within <strong>5 to 7 business days</strong> to the original payment method.</p>
                         </div>
                     </section>
 

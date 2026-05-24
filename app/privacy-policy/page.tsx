@@ -33,7 +33,7 @@ const PrivacyPolicyPage : React.FC = () => {
                                     <strong className="text-silvoraa-black font-medium">Personal Details:</strong> Name, email address, phone number, billing and shipping address when you place an order, create an account, or contact us.
                                 </li>
                                 <li>
-                                    <strong className="text-silvoraa-black font-medium">Transaction Information:</strong> Required to process purchases. Please note that we do not store card or banking details — all payments are handled securely by trusted third-party payment providers.
+                                    <strong className="text-silvoraa-black font-medium">Transaction Information:</strong> Required to process purchases. Please note that we do not store card or banking details; all payments are handled securely by trusted third-party payment providers.
                                 </li>
                                 <li>
                                     <strong className="text-silvoraa-black font-medium">Usage & Technical Data:</strong> Device type, browser information, IP address, and browsing activity, collected through cookies and analytics tools to improve site performance.

@@ -48,7 +48,7 @@ const faqs: FAQ[] = [
   {
     category: 'Returns & Refunds',
     question: 'How do I return an item?',
-    answer: 'Contact our team at hello@silvoraa.com with your order number. We\'ll send you a prepaid shipping label. Pack the item securely in its original box and drop it at the nearest pickup point.'
+    answer: 'Contact our team at silvoraa.work@gmail.com with your order number. We\'ll send you a prepaid shipping label. Pack the item securely in its original box and drop it at the nearest pickup point.'
   },
   {
     category: 'Returns & Refunds',
@@ -63,7 +63,7 @@ const faqs: FAQ[] = [
   {
     category: 'Jewelry Care',
     question: 'Why does my silver jewelry tarnish?',
-    answer: 'Tarnishing is natural and occurs when silver reacts with sulfur in the air or moisture. This is not a defect - it\'s a characteristic of all silver. Regular cleaning and proper storage prevent tarnish buildup.'
+    answer: 'Tarnishing is natural and occurs when silver reacts with sulfur in the air or moisture. This is not a defect, it\'s a characteristic of all silver. Regular cleaning and proper storage prevent tarnish buildup.'
   },
   {
     category: 'Jewelry Care',
@@ -83,7 +83,7 @@ const faqs: FAQ[] = [
   {
     category: 'Custom Orders',
     question: 'Can I get a custom design made?',
-    answer: 'Absolutely! We offer bespoke jewelry services. Share your ideas with our design team through hello@silvoraa.com or book a consultation. We\'ll create a custom piece that perfectly matches your vision.'
+    answer: 'Absolutely! We offer bespoke jewelry services. Share your ideas with our design team through silvoraa.work@gmail.com or book a consultation. We\'ll create a custom piece that perfectly matches your vision.'
   },
   {
     category: 'Custom Orders',

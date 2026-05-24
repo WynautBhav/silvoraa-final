@@ -8,7 +8,7 @@ import { ChevronRight, ArrowRight, Gem, Sparkles } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Gemstone Collections',
-  description: 'Explore our curated gemstone collections — Amethyst for calm, Citrine for abundance, Blue Topaz for clarity. Handcrafted 925 sterling silver jewelry for every intention.',
+  description: 'Explore our curated gemstone collections with Amethyst for calm, Citrine for abundance, Blue Topaz for clarity. Handcrafted 925 sterling silver jewelry for every intention.',
   alternates: { canonical: 'https://www.silvoraa.com/collections' },
   openGraph: {
     title: 'Gemstone Collections | Silvoraa',

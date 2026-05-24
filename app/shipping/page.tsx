@@ -44,7 +44,7 @@ const ShippingPage : React.FC = () => {
                             Order Processing & Dispatch
                         </h2>
                         <div className="pl-11 text-gray-600 leading-relaxed">
-                            <p>Orders are usually prepared and dispatched within <strong className="text-silvoraa-black">1–3 business days</strong>, excluding weekends and public holidays.</p>
+                            <p>Orders are usually prepared and dispatched within <strong className="text-silvoraa-black">1 to 3 business days</strong>, excluding weekends and public holidays.</p>
                         </div>
                     </section>
 
@@ -57,11 +57,11 @@ const ShippingPage : React.FC = () => {
                             <ul className="grid md:grid-cols-2 gap-4">
                                 <li className="bg-gray-50 p-4 rounded-lg border border-gray-100">
                                     <span className="block font-bold text-silvoraa-black mb-1">India</span>
-                                    Approx. 4–7 business days after dispatch
+                                    Approx. 4 to 7 business days after dispatch
                                 </li>
                                 <li className="bg-gray-50 p-4 rounded-lg border border-gray-100">
                                     <span className="block font-bold text-silvoraa-black mb-1">International</span>
-                                    Approx. 7–14 business days after dispatch
+                                    Approx. 7 to 14 business days after dispatch
                                 </li>
                             </ul>
                             <p className="text-sm italic text-gray-500">
