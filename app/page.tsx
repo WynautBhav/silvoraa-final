@@ -42,6 +42,12 @@ const organizationSchema = {
   url: 'https://www.silvoraa.com',
   logo: 'https://www.silvoraa.com/favicon.svg',
   description: 'Handcrafted gemstone jewelry brand based in Jaipur, India. Creating intention-based jewelry with 925 sterling silver and authentic earth-mined gemstones.',
+  founder: {
+    '@type': 'Person',
+    name: 'Rahul Sharma',
+    jobTitle: 'Founder & Lead Designer',
+    knowsAbout: 'Gemstone Jewelry, Gemology, Jewelry Design'
+  },
   sameAs: [
     'https://www.instagram.com/silvoraa',
     'https://www.facebook.com/silvoraa',
@@ -49,7 +55,7 @@ const organizationSchema = {
   ],
   contactPoint: {
     '@type': 'ContactPoint',
-    telephone: '+91-9876543210',
+    telephone: '+919876543210',
     contactType: 'customer service',
     availableLanguage: 'English'
   },

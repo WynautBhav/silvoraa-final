@@ -25,7 +25,7 @@ export const GLOBAL_CONFIG: GlobalConfig = {
     textSecondary: '#6B6B6B' // silvoraa-warmGray
   },
   whatsapp: {
-    number: '15551234567',
+    number: '+919876543210',
     defaultMessage: "Hi, I'm interested in your jewelry!",
     buttonPosition: 'bottom-right',
     visibleOn: 'all'

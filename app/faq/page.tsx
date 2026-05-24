@@ -1,4 +1,3 @@
-"use client";
 import type { Metadata } from 'next';
 import React from 'react';
 
@@ -15,6 +14,45 @@ export const metadata: Metadata = {
     url: 'https://www.silvoraa.com/faq',
   },
 };
+
+const howToSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to clean and care for gemstone jewelry",
+  "description": "Simple steps to clean your gemstone jewelry at home and keep it looking beautiful.",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Prepare warm soapy water",
+      "text": "Fill a small bowl with lukewarm water and add a few drops of mild dish soap."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Soak the jewelry",
+      "text": "Place your gemstone jewelry in the soapy water and let it soak for 2-3 minutes to loosen dirt."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Gently brush",
+      "text": "Use a soft-bristled brush (like a baby toothbrush) to gently clean around the stone and settings."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 4,
+      "name": "Rinse and dry",
+      "text": "Rinse thoroughly with clean water and pat dry with a soft, lint-free cloth."
+    }
+  ],
+  "supply": [
+    { "@type": "HowToSupply", "name": "Lukewarm water" },
+    { "@type": "HowToSupply", "name": "Mild dish soap" },
+    { "@type": "HowToSupply", "name": "Soft-bristled brush" },
+    { "@type": "HowToSupply", "name": "Lint-free cloth" }
+  ]
+});
 
 const faqSchema = JSON.stringify({
   "@context": "https://schema.org",
@@ -57,7 +95,7 @@ const faqSchema = JSON.stringify({
       "name": "Which gemstone is best for anxiety?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Amethyst is widely considered the best gemstone for anxiety relief. Its calming energy helps reduce stress and promotes relaxation."
+        "text": "Amethyst is the best gemstone for anxiety relief. Its calming energy reduces stress, promotes relaxation, and supports restful sleep."
       }
     },
     {
@@ -211,9 +249,9 @@ const faqCategories = [
   {
     title: "Care & Maintenance",
     questions: [
-      { question: "How to clean Amethyst jewelry?", answer: "Clean Amethyst gently with warm soapy water and a soft brush. Avoid ultrasonic cleaners, steam cleaning, or exposure to heat." },
-      { question: "Can I shower with gemstone jewelry?", answer: "It's best to remove gemstone jewelry before showering. Soap, shampoo, and hard water can dull the stone's polish and damage the metal setting." },
-      { question: "How to store silver gemstone pieces?", answer: "Store silver gemstone jewelry in a cool, dry place away from sunlight. Use anti-tarnish bags or cloth. Keep pieces separate to prevent scratching." }
+      { question: "How to clean Amethyst jewelry?", answer: "Clean Amethyst with warm soapy water and a soft brush. Avoid ultrasonic cleaners, steam, or heat. Pat dry with a soft cloth." },
+      { question: "Can I shower with gemstone jewelry?", answer: "Remove gemstone jewelry before showering. Soap and hard water dull the stone's polish and damage the metal setting over time." },
+      { question: "How to store silver gemstone pieces?", answer: "Store in a cool, dry place away from sunlight. Use anti-tarnish bags and keep pieces separate to prevent scratching." }
     ]
   },
   {
@@ -230,6 +268,8 @@ const FAQPage : React.FC = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqSchema }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: howToSchema }} />
 
       <div className="relative bg-silvoraa-black text-white overflow-hidden">
         <div className="absolute inset-0">

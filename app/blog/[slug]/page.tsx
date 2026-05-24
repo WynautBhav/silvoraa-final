@@ -1,5 +1,5 @@
 "use client";
-import React from 'react';
+import React, { useEffect } from 'react';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
 
@@ -12,6 +12,12 @@ const BlogPostPage : React.FC = () => {
   // Merge both blog data sources
   const allBlogs = { ...blogPostsData, ...seoBlogPosts };
   const post = slug ? allBlogs[slug] : null;
+
+  useEffect(() => {
+    if (post?.title) {
+      document.title = `${post.title} | Silvoraa`;
+    }
+  }, [post]);
 
   if (!post) {
     return (
@@ -34,8 +40,9 @@ const BlogPostPage : React.FC = () => {
     "datePublished": post.date,
     "author": {
       "@type": "Person",
-      "name": "Silvoraa Gemology Team",
-      "jobTitle": "Gemologists & Jewelry Experts"
+      "name": "Rahul Sharma",
+      "jobTitle": "Founder & Lead Gemologist",
+      "url": "https://www.silvoraa.com/about"
     },
     "publisher": {
       "@type": "Organization",
@@ -48,6 +55,24 @@ const BlogPostPage : React.FC = () => {
   });
 
   const sections = post.content.split('\n\n').filter(s => s.trim()).map(s => s.trim());
+
+  const stoneDefinitions: Record<string, string> = {
+    amethyst: 'Amethyst is a purple quartz gemstone believed to promote calmness, reduce anxiety, and enhance spiritual awareness. It is the birthstone for February.',
+    citrine: 'Citrine is a yellow-orange quartz gemstone associated with abundance, success, and joy. Often called the merchant\'s stone, it is believed to attract prosperity.',
+    garnet: 'Garnet is a deep red gemstone known as the stone of commitment and energy. It symbolizes trust and friendship, and is the birthstone for January.',
+    topaz: 'Topaz is a silicate gemstone associated with honesty, intuition, and emotional balance. Blue Topaz is the birthstone for December.',
+    opal: 'Opal is a gemstone known for its unique play-of-color, associated with inspiration, creativity, and emotional balance.',
+    'rose quartz': 'Rose Quartz is a pink variety of quartz known as the stone of unconditional love, emotional healing, and self-love.',
+    labradorite: 'Labradorite is a feldspar gemstone known as the stone of transformation, believed to enhance intuition and protect against negative energy.',
+    'lapis lazuli': 'Lapis Lazuli is a deep blue metamorphic rock associated with truth, wisdom, and inner peace.',
+    iolite: 'Iolite is a blue-violet gemstone known as the stone of visionaries, believed to enhance focus and creative thinking.',
+    emerald: 'Emerald is a green variety of beryl associated with rebirth, fertility, and love. It symbolizes harmony in relationships.',
+    peridot: 'Peridot is a green olivine gemstone associated with warmth, happiness, and positive energy. It is the birthstone for August.',
+  };
+
+  const definitionMatch = Object.entries(stoneDefinitions).find(([stone]) =>
+    post.title.toLowerCase().includes(stone) || post.excerpt.toLowerCase().includes(stone)
+  );
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
@@ -97,6 +122,11 @@ const BlogPostPage : React.FC = () => {
           </p>
 
           <div className="prose prose-lg md:prose-2xl max-w-none">
+            {definitionMatch && (
+              <p className="text-xl md:text-2xl text-silvoraa-black font-medium leading-relaxed mb-10 p-6 bg-purple-50/50 rounded-xl border-l-4 border-silvoraa-gold">
+                {definitionMatch[1]}
+              </p>
+            )}
             {sections.map((section, index) => {
               if (section.startsWith('## ')) {
                 return <h2 key={index} className="text-3xl md:text-5xl font-serif text-silvoraa-black mt-16 mb-8 tracking-wide border-b border-gray-200 pb-4">{section.replace('## ', '')}</h2>;

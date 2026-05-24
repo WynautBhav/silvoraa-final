@@ -1,5 +1,5 @@
 "use client";
-import React, { useMemo, useState } from 'react';
+import React, { useMemo, useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
 
@@ -26,6 +26,12 @@ const ProductPage : React.FC = () => {
     const { handle } = useParams<{ handle: string }>();
 
     const { addToCart } = useCart();
+
+    useEffect(() => {
+        if (product?.title) {
+            document.title = `${product.title} | Silvoraa`;
+        }
+    }, [product]);
     const [quantity, setQuantity] = useState(1);
     const [selectedImageIndex, setSelectedImageIndex] = useState(0);
     const [isAddedToCart, setIsAddedToCart] = useState(false);
@@ -183,7 +189,7 @@ const ProductPage : React.FC = () => {
         "@context": "https://schema.org",
         "@type": "Product",
         "name": String(product.title),
-        "description": String(product.description).substring(0, 160),
+        "description": String(product.description).replace(/^(Description|Product Features|Benefits):\s*/i, '').substring(0, 160),
         "sku": String(product.handle),
         "mpn": String(product.id),
         "image": images.filter((img: string) => typeof img === 'string'),

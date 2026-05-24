@@ -1,6 +1,5 @@
-"use client";
 import type { Metadata } from 'next';
-import React, { useMemo } from 'react';
+import React from 'react';
 import Link from 'next/link';
 
 import { PRODUCTS, STONES } from '@/constants';
@@ -20,35 +19,33 @@ export const metadata: Metadata = {
 
 const CollectionsPage : React.FC = () => {
     // Group products by stone type and get counts
-    const collections = useMemo(() => {
-        const stoneGroups: Record<string, { count: number; stone: typeof STONES[0] | undefined }> = {};
+    const stoneGroups: Record<string, { count: number; stone: typeof STONES[0] | undefined }> = {};
 
-        PRODUCTS.forEach(product => {
-            let effectiveStone = product.stone;
+    PRODUCTS.forEach(product => {
+        let effectiveStone = product.stone;
 
-            // Club all Topaz variations under generic Topaz
-            if ([StoneType.BLUE_TOPAZ, StoneType.SKY_BLUE_TOPAZ, StoneType.LEMON_TOPAZ].includes(product.stone)) {
-                effectiveStone = StoneType.TOPAZ;
-            }
+        // Club all Topaz variations under generic Topaz
+        if ([StoneType.BLUE_TOPAZ, StoneType.SKY_BLUE_TOPAZ, StoneType.LEMON_TOPAZ].includes(product.stone as StoneType)) {
+            effectiveStone = StoneType.TOPAZ;
+        }
 
-            if (!stoneGroups[effectiveStone]) {
-                stoneGroups[effectiveStone] = {
-                    count: 0,
-                    stone: STONES.find(s => s.stone === effectiveStone)
-                };
-            }
-            stoneGroups[effectiveStone].count++;
-        });
+        if (!stoneGroups[effectiveStone]) {
+            stoneGroups[effectiveStone] = {
+                count: 0,
+                stone: STONES.find(s => s.stone === effectiveStone)
+            };
+        }
+        stoneGroups[effectiveStone].count++;
+    });
 
-        return Object.entries(stoneGroups)
-            .map(([stoneType, data]) => ({
-                stoneType: stoneType as StoneType,
-                count: data.count,
-                stone: data.stone,
-                slug: stoneType.toLowerCase().replace(/ /g, '-')
-            }))
-            .sort((a, b) => b.count - a.count);
-    }, []);
+    const collections = Object.entries(stoneGroups)
+        .map(([stoneType, data]) => ({
+            stoneType: stoneType as StoneType,
+            count: data.count,
+            stone: data.stone,
+            slug: stoneType.toLowerCase().replace(/ /g, '-')
+        }))
+        .sort((a, b) => b.count - a.count);
 
     // Premium gradient mapping for stones
     const getStoneGradient = (stoneType: StoneType): string => {
