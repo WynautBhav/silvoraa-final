@@ -1,0 +1,654 @@
+{
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\App.tsx": {
+    "mtime": 1777652993.8418272,
+    "hash": "ca07e74bff559f183e3d3caa92e5937a"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\check_all_static_images.js": {
+    "mtime": 1777669134.0,
+    "hash": "ec8e6cb7ba8c1c2a29dbd26c187df0ba"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\check_appwrite_images.js": {
+    "mtime": 1777669134.0,
+    "hash": "ff3e4616ba52c1831337a6cbf656e49e"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\check_images.js": {
+    "mtime": 1777669134.0,
+    "hash": "0a7a653a8a6d7bf19a3ebe3433c7bd1d"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\check_stone_images.js": {
+    "mtime": 1777669134.0,
+    "hash": "d9b2e586b03bd1858d83a1458d93fbd4"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\compare_harmony.js": {
+    "mtime": 1777669134.0,
+    "hash": "f762a05c6d870c8875a99ac97cabc42f"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\constants.ts": {
+    "mtime": 1777669134.0,
+    "hash": "4b09de3d7f3c385c47a59e38fba41b7a"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\delete_junk.js": {
+    "mtime": 1777669134.0,
+    "hash": "e0b1c63d358a16dfde361251f5946b21"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\fetch_full_backend_structure.js": {
+    "mtime": 1777669134.0,
+    "hash": "a85fc8bb033a0385e41f647c27855661"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\fix.mjs": {
+    "mtime": 1777669134.0,
+    "hash": "65d585f272997049ac2a94817d14a22c"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\fix_all_appwrite.js": {
+    "mtime": 1777669134.0,
+    "hash": "32d925477bca408c33ac52fbf647f199"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\fix_appwrite.js": {
+    "mtime": 1777669134.0,
+    "hash": "c0e41fa9494c315fe07a5661bcfc582b"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\fix_appwrite_images.js": {
+    "mtime": 1777669134.0,
+    "hash": "c45de3a9c869ab3b3f98c7fdf4b46550"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\fix_const.js": {
+    "mtime": 1777669134.0,
+    "hash": "8f6258d02b1e361dceac24e5b7c7feeb"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\fix_constants_related.js": {
+    "mtime": 1777669134.0,
+    "hash": "2ba55091140845e4448258145d1b1fcd"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\fix_constants_related2.js": {
+    "mtime": 1777669134.0,
+    "hash": "d337a451439fbdccd1d5c2da43a48f9c"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\fix_rel.js": {
+    "mtime": 1777669134.0,
+    "hash": "003912d3ec2d43230e7d074f009c66f5"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\force_sync_all.js": {
+    "mtime": 1777669134.0,
+    "hash": "c6dc3757d65014d940abaead60ad8aee"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\force_sync_all_fix.js": {
+    "mtime": 1777669134.0,
+    "hash": "99876edaff031bd465587da55c261955"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\force_sync_correct.js": {
+    "mtime": 1777669134.0,
+    "hash": "1095aa1e2fbbaf5ddc0bb372d60b30f2"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\index.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "31d62ed2b8a89b5c5406c08eb769cc94"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\list_keys.js": {
+    "mtime": 1777669134.0,
+    "hash": "19d1b0bd0414d9ec28359d3c5c0b80e1"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\list_schema.js": {
+    "mtime": 1777669134.0,
+    "hash": "79a5e1a9f82fe02ee79e145dceb04a36"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\playwright.config.ts": {
+    "mtime": 1777669134.0,
+    "hash": "9e8274c220c307d0fd28443d65c54ba7"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\query_appwrite.js": {
+    "mtime": 1777669134.0,
+    "hash": "922d71f08416606af131e6169bc21f49"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\query_appwrite_100.js": {
+    "mtime": 1777669134.0,
+    "hash": "b5487889069143328502257b6ac2aa72"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\query_constants.js": {
+    "mtime": 1777669134.0,
+    "hash": "d239e70064562d8013d98a8cbc1c7780"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\query_harmony.js": {
+    "mtime": 1777669134.0,
+    "hash": "9b1d252bc99ab93115f0b7094261fc27"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\query_images.js": {
+    "mtime": 1777669134.0,
+    "hash": "01ead4304c07afd275dfed7112c343e2"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\query_short_desc.js": {
+    "mtime": 1777669134.0,
+    "hash": "e326e7e7bd35ab7aad9296d4bd0d0a93"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\test_all_appwrite.js": {
+    "mtime": 1777669134.0,
+    "hash": "87c0abd94e75ff648d221c7552e95bb4"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\test_appwrite_harmony.js": {
+    "mtime": 1777669134.0,
+    "hash": "854c2e91e5f4eadbde4bb75481f43a1d"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\types.ts": {
+    "mtime": 1777669134.0,
+    "hash": "6472d5d3b7ee13714143ac1d71f11d79"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\update_gemini.js": {
+    "mtime": 1777669134.0,
+    "hash": "90fd00a377fdb5c54254dab64345db6a"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\verify_all_integrity.js": {
+    "mtime": 1777669134.0,
+    "hash": "0ebb2e2f418a8305b61d570db7d5acb7"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\verify_pairing.js": {
+    "mtime": 1777669134.0,
+    "hash": "2f40b1b3769c9da4056274d46d16254b"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\vite.config.ts": {
+    "mtime": 1777669134.0,
+    "hash": "7b12dcf055fefd7dbdf948732934cd7d"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\vitest.config.ts": {
+    "mtime": 1777669134.0,
+    "hash": "198442f603ed1a55ff0af3bc7bb798a8"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\components\\Admin\\AdminLayout.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "9d9ad5870f37700089bdbc1efc60fa75"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\components\\Admin\\ImageUploadButton.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "a4c435b6844d9e977202f08351c15266"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\components\\Admin\\MediaManager.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "f4f23c5dbdd055db086ef15b9fa74b9c"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\components\\Admin\\ResizeHandle.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "3dddb3a40bd51494c1364f8ba581315b"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\components\\Admin\\SliderControl.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "8778e0e4576803180f603009631d2d4d"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\components\\Admin\\VisualHeroEditor.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "416659f83f943f5e837149e63a46d590"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\components\\AI\\AIStylist.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "be8cb5deef672404e1a821a9dfabf4d3"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\components\\Auth\\AdminRoute.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "f85ff211863d964e27feefcb702fc98a"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\components\\Auth\\AuthContext.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "2189a22262cb65781d1f87e7c9451f0d"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\components\\Auth\\SplashTransition.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "0567ec4fc2d02c6324cdfff7ef81188c"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\components\\Cart\\CartContext.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "842aa136f8918f388f39d07c70c579a3"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\components\\Cart\\CartDrawer.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "4f1ec6de133bc9da8e603e6d3884f85a"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\components\\Config\\ConfigProvider.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "1cca32a17793bbc9ed865cbd8f4a737b"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\components\\Hero\\HeroSection.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "8de760caa10f89409307508534e9508b"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\components\\Home\\CategoryCollections.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "6d35f669e13050b9b75fc567fac34390"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\components\\Home\\ConsultationCTA.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "cd11add02c0d5e7ba38737921c22e225"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\components\\Home\\FAQSection.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "3d487d322f65ec7eb08def4387446498"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\components\\Layout\\Footer.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "fc13d8ba8c585d968e971a6a14ac78ee"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\components\\Layout\\Navbar.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "56a33b96ae8de97e31fc705de1d1885c"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\components\\Layout\\ScrollToTop.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "b1ad82931b3ac1efa49b5c590cb67835"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\components\\Layout\\SmartSearch.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "3309e52dde7766f285aa641a8e7d7ef3"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\components\\Newsletter\\NewsletterForm.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "5800c78c72f76142df612b4b1e30c433"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\components\\Product\\Lightbox.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "f1635aaeab645e3b165f953a50f91572"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\components\\Product\\ProductCard.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "97b901563326507a01f5b5bf12d8a065"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\components\\Product\\ProductDescription.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "04180304f3fcdb7f1641499a6160eec3"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\components\\Product\\ProductDetail.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "98f9a48e21db21f30e1196a2f0f5a3e3"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\components\\Product\\ProductPromiseBanner.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "5a8fb23c1195b1f238e75d60a7dbdc9f"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\components\\Product\\ProductSidebarExtras.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "b5cfea68cd0ed9c910d7c1ad01c1b665"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\components\\Product\\SilvoraaStylist.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "600c174353d511cd7aea222e9454695e"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\components\\Reviews\\ReviewForm.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "a9ed83b242522eb773ec0ac91d07c8ca"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\components\\Reviews\\ReviewList.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "21bf626cdaf97f39fd515335a788f891"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\components\\Stones\\StoneBenefits.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "03fadbfec73cdb29dc6ff25f80970363"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\components\\UI\\Button.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "a882d15517aab2aea245f91f23307363"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\components\\UI\\ConfigErrorOverlay.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "5ff37b5a045354f5d646e3e684084b2f"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\components\\UI\\ErrorBoundary.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "515140d0b1467b4c4b9e6f68d9f039a5"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\components\\UI\\ImageUpscaler.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "cd2b7671841fd70ae136913357204555"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\components\\UI\\LoadingSpinner.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "cf9789caa3e3aaf66f87dc83bd35cb90"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\components\\UI\\PageLoader.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "e2696ae81216ab9ca0211fd1933f186c"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\components\\UI\\SecurityHeaders.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "a2f0bad51fc949ade3e4daf95be6c965"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\components\\UI\\SmartImage.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "2dade3751e240a24317266a40e7901de"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\components\\WhatsApp\\WhatsAppButton.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "2f4b6ef6b1673f89daea08dce4b1e529"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\data\\blogPosts.ts": {
+    "mtime": 1777669134.0,
+    "hash": "158543b8d4e5393e61b7a2334664d4ca"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\data\\seoBlogPosts.ts": {
+    "mtime": 1777652799.5379474,
+    "hash": "8468b18b6c61a61414941caf85e29aeb"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\hooks\\useAnalytics.ts": {
+    "mtime": 1777669134.0,
+    "hash": "fb7f7929532fc1ee9ddbbe7a297e4b5c"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\hooks\\usePostHog.ts": {
+    "mtime": 1777669134.0,
+    "hash": "2f2b7297ed037121fe0aa42d989f7590"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\hooks\\useProducts.ts": {
+    "mtime": 1777669134.0,
+    "hash": "f41ab9bb8111dc0927a62917aadb257e"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\lib\\appwrite.ts": {
+    "mtime": 1777669134.0,
+    "hash": "0c9a96a3a647c0e11119899144aa0ade"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\lib\\csvHelper.ts": {
+    "mtime": 1777669134.0,
+    "hash": "5bf8cc2e96fefe96544b8f8251924198"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\pages\\AboutPage.tsx": {
+    "mtime": 1777653009.2216291,
+    "hash": "46955912eb53bdfc2a59eece314d635a"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\pages\\AccountPage.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "24569b32458e03350668a6b7d88b8503"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\pages\\AdminConsole.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "0e9118802b6f22a99ff8b31545f9ff69"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\pages\\AuthenticityPage.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "ca31f6f71e883f7cb3e627bf8ace7a49"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\pages\\AuthPage.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "8fe98375bf7eb83b19ca4539092a1981"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\pages\\BlogPage.tsx": {
+    "mtime": 1777652650.0153651,
+    "hash": "7b0c2d021d60508ef80a9c4778ad5628"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\pages\\BlogPostPage.tsx": {
+    "mtime": 1777652303.51236,
+    "hash": "da8907d4a9f7d387901d71068cc746c8"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\pages\\CategoryDetailPage.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "283ba2dfc49793253779663bcb0aff7e"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\pages\\CheckoutPage.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "034a14899f32919dc15259dc0b335f98"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\pages\\CollectionDetailPage.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "20339170c4a7844bf50994ad4cb4731e"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\pages\\CollectionsPage.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "3f370bf493d027f693b15eff94c8742c"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\pages\\ConsultationPage.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "70fb93bf10e2462a7fe4b65070248c04"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\pages\\FAQPage.tsx": {
+    "mtime": 1777653223.0442967,
+    "hash": "9b3e8edba1c25244ce88515abdfde8fe"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\pages\\HomePage.tsx": {
+    "mtime": 1777652958.6497037,
+    "hash": "a6c6f69c60ad68aa32a44cd85ad68d44"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\pages\\index.ts": {
+    "mtime": 1777669134.0,
+    "hash": "c1becc0917ae583ff1c4f9136c7d46f1"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\pages\\NewArrivalsPage.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "791b76976fba8c5eb000bd3882c260e8"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\pages\\NotFoundPage.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "7a09ff7ccd7f12a7a882c3d06ae7e742"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\pages\\PrivacyPolicyPage.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "9deed73a52ffbe093de5d4c16d181766"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\pages\\ProductPage.tsx": {
+    "mtime": 1777653110.7890067,
+    "hash": "921a2c64b4d66d5f7df1cb75c6247062"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\pages\\ReturnsPage.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "ca2f7437d655d44e9ccb69a6e4c0d2b9"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\pages\\ShippingPage.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "a81582af635214eef40da53b67cfea97"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\pages\\ShopPage.tsx": {
+    "mtime": 1777653015.6043675,
+    "hash": "46f566c6bae55028a101e6a2a3d94546"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\pages\\TermsPage.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "142850446977e8125ccaabd3d417a628"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\pages\\admin\\CustomersPage.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "e61f99263ebb411403917a9d9b79f9d4"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\pages\\admin\\DashboardPage.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "c3826289894d468740fd2d0721936f18"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\pages\\admin\\DiscountsPage.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "833a4cb87e049fa7c1cc20827002bb5c"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\pages\\admin\\OrderDetailsPage.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "1925117eddc0032e7d9d539a02cfdda3"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\pages\\admin\\OrdersPage.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "9e87df56de58932a24d2d3f4ed8248c3"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\pages\\admin\\ProductEditorPage.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "d832522f8fd11c8e7aa352124f1773a9"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\pages\\admin\\ProductsPage.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "bc6edec09445f486daf0b7e588c4f4ac"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\pages\\admin\\SiteEditorPage.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "83270b7866114f9d5f331706442cb290"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\pages\\admin\\components\\ImportProductsModal.tsx": {
+    "mtime": 1777669134.0,
+    "hash": "1ab447adcfc0a40cf640fab0f8273dee"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\scripts\\enrich-supabase.py": {
+    "mtime": 1777669134.0,
+    "hash": "519a3251c1c2c8cd1769d3a93c03af69"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\scripts\\fetch-supabase-products.mjs": {
+    "mtime": 1777669134.0,
+    "hash": "77d9142a11efafe12539af4c226a862b"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\scripts\\generate-seed-sql.ts": {
+    "mtime": 1777669134.0,
+    "hash": "e944b729ec61330814c26677812b9976"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\scripts\\generate-sitemap.ts": {
+    "mtime": 1777669134.0,
+    "hash": "93c5972a849f8bc682965a54298ffa7e"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\scripts\\prerender.ts": {
+    "mtime": 1777669134.0,
+    "hash": "0bc0afda4c91c4815a5e33125e728e31"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\scripts\\seed-admins.mjs": {
+    "mtime": 1777669134.0,
+    "hash": "6087708b53bd91761838641adddd30ec"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\scripts\\seed-products.ts": {
+    "mtime": 1777669134.0,
+    "hash": "e26c9a45507da651a1b0a8f63d5db101"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\scripts\\seed_products_admin.ts": {
+    "mtime": 1777669134.0,
+    "hash": "601eaf84bba3f1424ebd988352e52c6f"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\scripts\\python_legacy\\fix_constants_mobile.py": {
+    "mtime": 1777669134.0,
+    "hash": "05ead67e8c17dd621f24ee1521430eaf"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\scripts\\python_legacy\\fix_desktop.py": {
+    "mtime": 1777669134.0,
+    "hash": "a78099bb2e3c1eefded164e02a3cbfb5"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\scripts\\python_legacy\\fix_hero.py": {
+    "mtime": 1777669134.0,
+    "hash": "fe4f81d867cc18c735637822f3aceed1"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\scripts\\python_legacy\\update_homepage.py": {
+    "mtime": 1777669134.0,
+    "hash": "17ef851a862a85331b4702d8890add3d"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\scripts\\python_legacy\\update_prices.py": {
+    "mtime": 1777669134.0,
+    "hash": "0f1c37b47a2ef36611725faf3f7050ba"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\scripts\\python_legacy\\update_stone.py": {
+    "mtime": 1777669134.0,
+    "hash": "6bbbfa7a3f645f64a0ed52cffc44cf2f"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\services\\geminiService.ts": {
+    "mtime": 1777669134.0,
+    "hash": "d9e7c55a361b51f4a0d90ac3935586c2"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\services\\knowledgeBase.ts": {
+    "mtime": 1777669134.0,
+    "hash": "aed58cb9c89cabfbb5687fd79ce5f7ac"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\services\\orderService.ts": {
+    "mtime": 1777669134.0,
+    "hash": "7411f356e8dee70719719a0252b127a4"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\services\\productService.ts": {
+    "mtime": 1777669134.0,
+    "hash": "c0421b20fa4fb326ed717a453c5f5c88"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\services\\profileService.ts": {
+    "mtime": 1777669134.0,
+    "hash": "2b695de8544f00c2c3a92babc23ec55f"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\services\\searchService.ts": {
+    "mtime": 1777669134.0,
+    "hash": "802c51d94ad51f9e73c74ab249695ead"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\services\\wittyResponses.ts": {
+    "mtime": 1777669134.0,
+    "hash": "15e2586399aad04520449bc94719a6b7"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\src\\test\\setup.ts": {
+    "mtime": 1777669134.0,
+    "hash": "d0de64ecfc350f88ee26ae5b4ac90f40"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\src\\test\\useProducts.test.ts": {
+    "mtime": 1777669134.0,
+    "hash": "83afcd066abb460e4fd3b86f0c3187dd"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\supabase\\schema.sql": {
+    "mtime": 1777669134.0,
+    "hash": "972336d0f188aa2277b1c0ca47222ee5"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\supabase\\seed_products.sql": {
+    "mtime": 1777669134.0,
+    "hash": "131923c4f06a9952d74b835adc9d8e9a"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\supabase\\migrations\\20240128_coupons.sql": {
+    "mtime": 1777669134.0,
+    "hash": "16fe90d66b920cca76417c0590fe9a51"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\supabase\\migrations\\20240128_site_config.sql": {
+    "mtime": 1777669134.0,
+    "hash": "ada51e8776713cab63d7d846c1d36cec"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\tests\\e2e\\silvoraa.spec.ts": {
+    "mtime": 1777669134.0,
+    "hash": "30f46036044f261f957162d4e0c6ea32"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\utils\\imageProcessor.ts": {
+    "mtime": 1777669134.0,
+    "hash": "7485cc17db8a145dee2ad182954f3cbe"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\utils\\productDataGenerator.ts": {
+    "mtime": 1777669134.0,
+    "hash": "8cc240e8d21cfc932258af9f7c7ef6ad"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\BACKEND_STRUCTURE.md": {
+    "mtime": 1777669134.0,
+    "hash": "c06ef0fdd261c7fa5a3a1ffae66f9258"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\index.html": {
+    "mtime": 1777669134.0,
+    "hash": "81cfdaf9cb543ead9e68fd9819bf7ef6"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\README.md": {
+    "mtime": 1777669134.0,
+    "hash": "a391090a0cc221e07dcfa0b26f87e039"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\scripts\\README.md": {
+    "mtime": 1777669134.0,
+    "hash": "9abae545d615bb061143287064cffc6d"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\scripts\\python_legacy\\admin-freeform-banner.md": {
+    "mtime": 1777669134.0,
+    "hash": "f461b7d3734c91cfab81e41932adbd7a"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\scripts\\python_legacy\\new_prices.txt": {
+    "mtime": 1777669134.0,
+    "hash": "5ec49a947ac442a73e0c23e060412781"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\supabase\\SETUP.md": {
+    "mtime": 1777669134.0,
+    "hash": "ab3d7f6eb9901259d81b52b3eb8b57d9"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\Stones images\\Amethyst.png": {
+    "mtime": 1777669134.0,
+    "hash": "485b5707b4fb8f99304bcc479b33d871"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\Stones images\\Citrine.png": {
+    "mtime": 1777669134.0,
+    "hash": "956d52b42d7c2861100db30861e699dc"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\Stones images\\Cubic Zirconia.png": {
+    "mtime": 1777669134.0,
+    "hash": "f8a98913912dfe65447cf3ff1fae2e1b"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\Stones images\\Garnet.png": {
+    "mtime": 1777669134.0,
+    "hash": "a884b3d4ea98f9a0550596f920bf71fa"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\Stones images\\Iolite.png": {
+    "mtime": 1777669134.0,
+    "hash": "9dbb79b654b32d74b08c20d6496ff1c0"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\Stones images\\Lapiz.png": {
+    "mtime": 1777669134.0,
+    "hash": "f0cfee4cda1f150a9d0e053be8e1f89d"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\Stones images\\Topaz.png": {
+    "mtime": 1777669134.0,
+    "hash": "421019e69e66260920614f50f25e7968"
+  },
+  "C:\\Users\\Vaibhav\\Downloads\\Compressed\\silvoraa-final-main\\Stones images\\Tourmaline.png": {
+    "mtime": 1777669134.0,
+    "hash": "cdad3c28b239ba65d288972cfe97d17f"
+  }
+}
