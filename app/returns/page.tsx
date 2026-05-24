@@ -142,7 +142,7 @@ const ReturnsPage : React.FC = () => {
                                 </li>
                                 <li className="flex items-center gap-3">
                                     <span className="w-2 h-2 rounded-full bg-green-500" />
-                                    Verified cases are resolved within <strong>5-7 business days</strong>, in line with applicable consumer protection regulations
+                                    Verified cases resolved within <strong>5-7 business days</strong> as per applicable regulations
                                 </li>
                             </ul>
                         </div>
