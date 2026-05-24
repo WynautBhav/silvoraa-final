@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import ShopContent from './shop-content';
+import ShopContent from './ShopPageClient';
 
 export const metadata: Metadata = {
   title: 'Shop All',

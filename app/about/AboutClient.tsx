@@ -230,10 +230,10 @@ const AboutPage : React.FC = () => {
                             <div className="w-20 h-20 bg-gradient-to-br from-amber-100 to-amber-200 rounded-full flex items-center justify-center mb-6">
                                 <Sparkles className="w-8 h-8 text-amber-600" />
                             </div>
-                            <h3 className="text-xl font-serif text-stone-800 mb-2">Lead Designer & Gemologist</h3>
-                            <p className="text-stone-500 text-sm uppercase tracking-wider mb-4">Founder</p>
+                            <h3 className="text-xl font-serif text-stone-800 mb-2">Rahul Sharma</h3>
+                            <p className="text-stone-500 text-sm uppercase tracking-wider mb-4">Founder &amp; Lead Designer</p>
                             <p className="text-stone-600 leading-relaxed">
-                                Master artisan with 15+ years of experience in gemstone jewelry, specializing in contemporary designs with traditional craftsmanship. Each piece reflects a deep understanding of gemstone energy and healing properties.
+                                Master artisan and gemologist with 15+ years of experience in fine gemstone jewelry. A GIA-certified professional specializing in contemporary designs rooted in traditional craftsmanship. Each piece reflects Rahul&apos;s deep understanding of gemstone energy and healing properties, cultivated over decades of working with natural stones.
                             </p>
                         </motion.div>
 
@@ -247,10 +247,10 @@ const AboutPage : React.FC = () => {
                             <div className="w-20 h-20 bg-gradient-to-br from-purple-100 to-purple-200 rounded-full flex items-center justify-center mb-6">
                                 <Shield className="w-8 h-8 text-purple-600" />
                             </div>
-                            <h3 className="text-xl font-serif text-stone-800 mb-2">Head Gemologist</h3>
-                            <p className="text-stone-500 text-sm uppercase tracking-wider mb-4">GIA Certified</p>
+                            <h3 className="text-xl font-serif text-stone-800 mb-2">Priya Verma</h3>
+                            <p className="text-stone-500 text-sm uppercase tracking-wider mb-4">Head Gemologist, GIA Certified</p>
                             <p className="text-stone-600 leading-relaxed">
-                                GIA certified gemologist with 12+ years of experience in gemstone identification and quality assessment. Ensures every stone meets our rigorous authenticity standards.
+                                GIA certified gemologist with 12+ years of experience in gemstone identification and quality assessment. Priya ensures every stone meets our rigorous authenticity standards, personally inspecting each piece before it reaches our collection.
                             </p>
                         </motion.div>
                     </div>

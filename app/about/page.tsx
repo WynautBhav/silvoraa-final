@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import AboutPageClient from './about-page-client';
+import AboutPageClient from './AboutClient';
 
 export const metadata: Metadata = {
   title: 'Our Story | Silvoraa',

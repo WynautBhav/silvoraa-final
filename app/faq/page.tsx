@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
-import FAQClient from './FAQClient';
+import React from 'react';
+import Link from 'next/link';
+import { Sparkles, ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'FAQ',
