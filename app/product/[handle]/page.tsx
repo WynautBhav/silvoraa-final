@@ -11,7 +11,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const product = PRODUCTS.find(p => p.handle === handle);
 
   if (!product) {
-    return { title: 'Product Not Found | Silvoraa' };
+    return { title: 'Product Not Found' };
   }
 
   const cleanDescription = product.description
@@ -24,18 +24,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     : `Shop ${product.title} — a handcrafted ${product.type.toLowerCase()} featuring ${product.stone}. Premium 925 sterling silver.`;
 
   return {
-    title: product.seoTitle || `${product.title} | Silvoraa`,
+    title: product.seoTitle || product.title,
     description: product.seoDescription || cleanDescription,
     alternates: { canonical: `https://www.silvoraa.com/product/${handle}` },
     openGraph: {
-      title: product.seoTitle || `${product.title} | Silvoraa`,
+      title: product.seoTitle || `${product.title}`,
       description: product.seoDescription || cleanDescription,
       url: `https://www.silvoraa.com/product/${handle}`,
       images: product.image ? [{ url: `https://www.silvoraa.com${product.image}`, width: 1200, height: 630, alt: product.title }] : [],
     },
     twitter: {
       card: 'summary_large_image',
-      title: product.seoTitle || `${product.title} | Silvoraa`,
+      title: product.seoTitle || `${product.title}`,
       description: product.seoDescription || cleanDescription,
       images: product.image ? [`https://www.silvoraa.com${product.image}`] : [],
     },
